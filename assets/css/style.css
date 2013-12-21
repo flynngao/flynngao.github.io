@@ -13,10 +13,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .header {
-    width: 400px;
+    
     margin: 100px auto;
     text-align: center;
-    border-bottom: 5px solid #dadada;
+    
 }
 
 .header .links a {
