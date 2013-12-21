@@ -1,13 +1,37 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: page
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+<div class="index-page">
+<div class="posts fn-clear">
+  {% for post in paginator.posts %}
+    <article class='{{post.icon}}'>
+    	
+    	<div class="">	    
+    		<h1><a class='title' href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><span class='date fn-hide'>{{ post.date | date_to_string }}</span>
+          </h1>
+ 
+    	</div>
+
+   	</article>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  <ul>
+      <li {% if paginator.page == 1 %} class="active" {% endif %}>   
+        <a href="/">1</a>  
+      </li>
+
+    {% for count in (2..paginator.total_pages) %}
+      <li {% if count == paginator.page %} class="page" {% endif %}>
+          <a href="/page{{ count }}">{{ count }}</a>
+      </li>
     {% endfor %}
   </ul>
+ 
 </div>
+</div>
+
+
+
