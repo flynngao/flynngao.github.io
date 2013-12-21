@@ -25,19 +25,21 @@
       <div class="header">
         <div class="component ">
         <button class="cn-button" id="cn-button">
-          <a href=""><img src="http://tp2.sinaimg.cn/1674540501/180/40013708336/1" alt="header" width="80"
+          <a href=""><img class="first" src="http://tp2.sinaimg.cn/1674540501/180/40013708336/1" alt="header" width="80"
+          height="80">
+          <img class="random" src="http://pic1.sc.chinaz.com/Files/pic/faces/2241/28.gif" alt="header" width="80"
           height="80">
           </a>
         </button>
         <div class="cn-wrapper " id="cn-wrapper">
           <ul>
-            <li><a href="#"><span>About</span></a></li>
-            <li><a href="#"><span>Tutorials</span></a></li>
-            <li><a href="#"><span>Articles</span></a></li>
-            <li><a href="#"><span>Snippets</span></a></li>
-            <li><a href="#"><span>Plugins</span></a></li>
-            <li><a href="#"><span>Contact</span></a></li>
-            <li><a href="#"><span>Follow</span></a></li>
+            <li><a href="/"><span class="iconfont">&#x3636;</span></a></li>
+            <li><a href="/projects"><span class="iconfont">&#x3641;</span></a></li>
+            <li><a href="#"><span class="iconfont">&#x3639;</span></a></li>
+            <li><a href="#"><span class="iconfont">&#x363a;</span></a></li>
+            <li><a href="#"><span class="iconfont">&#x36a2;</span></a></li>
+            <li><a href="#"><span class="iconfont">&#x363c;</span></a></li>
+            <li><a href="/about"><span class="iconfont">&#x363d;</span></a></li>
            </ul>
         </div>
         <!-- End of Nav Structure -->
@@ -59,8 +61,10 @@
             var nav = $('#cn-wrapper');
             if(nav.hasClass('opened-nav')){
               nav.removeClass('opened-nav');
+              $(this).removeClass('clicked');
             } else {
               nav.addClass('opened-nav');
+              $(this).addClass('clicked');
             }
 
             

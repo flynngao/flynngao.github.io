@@ -3,11 +3,26 @@
 body {
     font-family: Lora,"Xin Gothic","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
     font-weight: 700;
+    position:relative;
 }
-
 h1,h2,h3,h4,h5,h6 {
     font-family: "Xin Gothic","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",SimSun,sans-serif!important;
 }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1386000097_6571155.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1386000097_6571155.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1386000097_7057087.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1386000097_5037913.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1386000097_7483354.svg#svgFontName') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+    font-family: "iconfont"!important;
+    -webkit-font-smoothing: antialiased;
+}
+
 .fn-hide{
     display: none;
 }
@@ -52,6 +67,9 @@ h1,h2,h3,h4,h5,h6 {
     height: 7em;
     font-family: 'Lato', Arial, sans-serif;
 }
+.component *{
+    position:relative;
+}
 
 .component > h2 {
     position: absolute;
@@ -90,16 +108,26 @@ h1,h2,h3,h4,h5,h6 {
     cursor: pointer;
     -webkit-backface-visibility: hidden;
 }
+.cn-button .random{
+    display:none;
+}
+.clicked .first{
+    display:none;
+}
+.clicked .random{
+    display:inline-block!important;
+}
+
 .csstransforms .cn-wrapper {
     font-size: .68em;
     position: absolute;
-    bottom:-50%;
+    top:100%;
     left: 50%;
     z-index: 10;
     margin-top: -13em;
     margin-left: -13.5em;
     width: 27em;
-    height: 37em;
+    height: 20em;
     border-radius: 50%;
     background: transparent;
     opacity: 0;
@@ -168,8 +196,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .csstransforms .cn-wrapper li a {
+    
     position: absolute;
-    position: fixed; /* fix the displacement bug in webkit browsers when using tab key */
+    /*position:fixed;*/
+     /* fix the displacement bug in webkit browsers when using tab key */
     right: -7.25em;
     bottom: -7.25em;
     display: block;
@@ -196,9 +226,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .csstransforms .cn-wrapper li a span {
     position: relative;
-    top: 1.8em;
+    top: .8em;
     display: block;
-    font-size: .5em;
+    font-size: 1em;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -206,9 +236,9 @@ h1,h2,h3,h4,h5,h6 {
 .csstransforms .cn-wrapper li a:hover,
 .csstransforms .cn-wrapper li a:active,
 .csstransforms .cn-wrapper li a:focus {
-    background: -webkit-radial-gradient(transparent 35%, #449e6a 35%);
-    background: -moz-radial-gradient(transparent 35%, #449e6a 35%);
-    background: radial-gradient(transparent 35%, #449e6a 35%);
+    background: -webkit-radial-gradient(transparent 35%, #222 35%);
+    background: -moz-radial-gradient(transparent 35%, #222 35%);
+    background: radial-gradient(transparent 35%, #222 35%);
 }
 
 .csstransforms .opened-nav li {
@@ -337,7 +367,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 
     .cn-button {
-        font-size: 1em;
+        /*font-size: 1em;*/
     }
 }
 
