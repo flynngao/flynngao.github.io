@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Welcome to Jekyll!
+    </title>
+    
+    <meta name="author" content="">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+                        
+      </script>
+    <![endif]-->
+    <script src="/assets/js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link href="/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="https://i.alipayobjects.com/e/201311/1SmK7nhovl.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container csstransforms">
+      <div class="header">
+        <div class="component ">
+        <button class="cn-button" id="cn-button">
+          <a href=""><img src="http://tp2.sinaimg.cn/1674540501/180/40013708336/1" alt="header" width="80"
+          height="80">
+          </a>
+        </button>
+        <div class="cn-wrapper " id="cn-wrapper">
+          <ul>
+            <li><a href="#"><span>About</span></a></li>
+            <li><a href="#"><span>Tutorials</span></a></li>
+            <li><a href="#"><span>Articles</span></a></li>
+            <li><a href="#"><span>Snippets</span></a></li>
+            <li><a href="#"><span>Plugins</span></a></li>
+            <li><a href="#"><span>Contact</span></a></li>
+            <li><a href="#"><span>Follow</span></a></li>
+           </ul>
+        </div>
+        <!-- End of Nav Structure -->
+      </div>
+<!--        <div class="links">
+          <a href="/">Blogs</a>
+          <a href="/about.html">About</a>
+       </div> -->
+      </div>
+      <div class="content fn-clear">
+        <div class="page-header">
+  <h3><span class="title">Welcome to Jekyll! </span><small>Supporting tagline</small></h3>
+  <div class="date"><span>21 December 2013
+  <a href="" class="back"></a>
+</div>
+
+
+  <div class='content'>
+    <p>You&#8217;ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes! To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+<div class='highlight'><pre><code class='ruby'><span class='k'>def</span> <span class='nf'>print_hi</span><span class='p'>(</span><span class='nb'>name</span><span class='p'>)</span>
+  <span class='nb'>puts</span> <span class='s2'>&quot;Hi, </span><span class='si'>#{</span><span class='nb'>name</span><span class='si'>}</span><span class='s2'>&quot;</span>
+<span class='k'>end</span>
+<span class='n'>print_hi</span><span class='p'>(</span><span class='s1'>&#39;Tom&#39;</span><span class='p'>)</span>
+<span class='c1'>#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span>
+</code></pre></div>
+<p>Check out the <a href='http://jekyllrb.com'>Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href='https://github.com/mojombo/jekyll'>Jekyll&#8217;s GitHub repo</a>.</p>  
+  </div>
+
+
+
+      </div>
+      <!-- /container -->
+    </div>
+    <script>
+      $(document).ready(function ($) {
+          $('#cn-button').click(function (e) {
+            e.preventDefault();
+            var nav = $('#cn-wrapper');
+            if(nav.hasClass('opened-nav')){
+              nav.removeClass('opened-nav');
+            } else {
+              nav.addClass('opened-nav');
+            }
+
+            
+          });
+      })
+    </script>
+  </body>
+
+</html>
