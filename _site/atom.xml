@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Not A thing</title>
+ <link href="http://flynngao.github.io/atom.xml" rel="self"/>
+ <link href="http://flynngao.github.io"/>
+ <updated>2013-12-21T13:04:56+08:00</updated>
+ <id>http://flynngao.github.io</id>
+ <author>
+   <name>FlynnGao</name>
+   <email>blah@email.test</email>
+ </author>
+
+ 
+ <entry>
+   <title>无线浏览器基础知识收集</title>
+   <link href="http://flynngao.github.io/tech/2013/12/20/%E6%97%A0%E7%BA%BF%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9F%A5%E8%AF%86%E5%9F%BA%E7%A1%80"/>
+   <updated>2013-12-20T00:00:00+08:00</updated>
+   <id>http://flynngao.github.io/tech/2013/12/20/无线浏览器知识基础</id>
+   <content type="html">&lt;h5 id='viewpoint'&gt;viewpoint&lt;/h5&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>ATP每周精选-v.02</title>
+   <link href="http://flynngao.github.io/atp/2013/10/14/ATP%E6%AF%8F%E5%91%A8%E7%B2%BE%E9%80%89.v.02"/>
+   <updated>2013-10-14T00:00:00+08:00</updated>
+   <id>http://flynngao.github.io/atp/2013/10/14/ATP每周精选.v.02</id>
+   <content type="html">&lt;p&gt;&lt;img alt='' src='https://trello-attachments.s3.amazonaws.com/5077867e6c9e9ab02045024b/525ad4dbd9df745211000332/2e9442201c9d8756ffb32e07e341dfa8/upload_2013-10-14_at_1.14.14_am.png_500x117.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;从这周开始ATP将会以群邮件的形式，重新展开！！！ 继续秉着为大家分享好玩有趣的干货为目的，下面是最近一周收集到的一些：&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id='annyang_'&gt;&lt;a href='https://www.talater.com/annyang/'&gt;Annyang 小型音频交互库&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;这是一个小于1k的js库。表担心，小伙伴们，真的不支持中文。当然了小A本人小写了个demo，其分辨率还是可以的。至少让我觉得10几年英文没白学。这个库写起来还是挺简单的，注意一个问题，commands里面额key，假如使用&lt;code&gt;双引号&lt;/code&gt;，是会崩溃的。同时此库做了一些模糊匹配例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var commands = {
+
+&amp;#39;show me *term&amp;#39;: showFlickr,
+
+&amp;#39;calculate :month stats&amp;#39;: calculateStats,
+
+&amp;#39;say hello (to my little) friend&amp;#39;: greeting
+};&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img alt='' src='http://ww1.sinaimg.cn/bmiddle/63cf75d5gw1e8qx29tuanj20v40duq5w.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;有了这个库，有的时候我猜想可以帮助一些用户完成一些搜索操作&lt;/p&gt;
+
+&lt;p&gt;如图：我说&lt;code&gt;alipay&lt;/code&gt;，给我来了ebay！反了他！什么我的英文烂得跟X一样？不可能！&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id='node'&gt;&lt;a href='http://spion.github.io/posts/analysis-generators-and-other-async-patterns-node.html?utm_source=nodeweekly&amp;amp;utm_medium=email'&gt;NODE异步编程好文章&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;云际&lt;/code&gt;上周推荐了一篇关于异步编程的好而且好………………………………长的异步好文章，极其详尽的写了generators和其他异步模式之间的区别，最关键，题目不知道该怎么翻译，大家理解就好&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='http://ww1.sinaimg.cn/bmiddle/63cf75d5gw1e8qx20cp8oj20us0csabk.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;ps：分不出作者性别，但这么不可爱肯定是男孩子&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id='_nodejs'&gt;&lt;a href='http://nodeschool.io/#levelmeup'&gt;过关学习 nodejs&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;看到这个levelup学习不仅有感而发的分享一下，想起&lt;code&gt;降级轮&lt;/code&gt;里面讽刺IT精英们，是怎么一层层在it界厮杀争取往上爬。这个哲学是否好坏因人而异，但是学习一个东西，升级过关这种方式在中二病程序员群体中，绝对效果显著的。例如著名的&lt;code&gt;vim adventure&lt;/code&gt;（虽然我玩完了，还是用了sublime）&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='http://ww2.sinaimg.cn/bmiddle/63cf75d5gw1e8qx23yas5j20ub0guju9.jpg' /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id='uibox'&gt;&lt;a href='http://www.uibox.in/'&gt;uibox组件库&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;说它是个组件库，其实不太确切，其实他就是负责收集散落在各地的组件而已，虽然有bootstrap一劳永逸，但这个入口作为寻找灵感地方还是不错的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='http://ww3.sinaimg.cn/bmiddle/63cf75d5gw1e8qx1z3kp3j20te0feq53.jpg' /&gt;&lt;/p&gt;
+
+&lt;h5 id='id2'&gt;槽&lt;/h5&gt;
+
+&lt;p&gt;ATP已经好久没有更新，回头看看之前一起收集trello里面东西，确实还是很有意思，希望大家有趣的东西一定分享出来，由小A收集整理。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;庆祝&lt;code&gt;地球村&lt;/code&gt;，&lt;code&gt;账户通&lt;/code&gt;，&lt;code&gt;年账单&lt;/code&gt;不用在支持ie6！！ 以后收集到的技术将会有更大更广的舞台来使用了&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;大家中秋节快乐，虽然&lt;code&gt;五仁&lt;/code&gt;我死都不会吃，但小伙伴们不要黑他&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;大家一定要注意身体……（喷血），竟然一放假就发烧了&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>ATP每周精选-v.01</title>
+   <link href="http://flynngao.github.io/atp/2013/10/12/ATP%E6%AF%8F%E5%91%A8%E7%B2%BE%E9%80%89.v.01"/>
+   <updated>2013-10-12T00:00:00+08:00</updated>
+   <id>http://flynngao.github.io/atp/2013/10/12/ATP每周精选.v.01</id>
+   <content type="html">&lt;p&gt;&lt;img alt='' src='https://trello-attachments.s3.amazonaws.com/5077867e6c9e9ab02045024b/525ad4dbd9df745211000332/2e9442201c9d8756ffb32e07e341dfa8/upload_2013-10-14_at_1.14.14_am.png_500x117.png' /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id='canva_'&gt;&lt;a href='https://www.canva.com/'&gt;新工具:Canva 传说让设计师失业的工具&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;小A有幸使用到了这款，传说让设计师失业的工具了，当然了这是夸大了的说法。当然非常吸引人的部分当然就是素材马上可得的部分，左上角的搜索框，直接把你所以需要相关素材并且拖动就行，这意味着，简单的设计稿就没有必要在使用PS了，简单的拖拽就完成一副还不错的平面设计，这对小白用户绝对是一大福音啊！趁图片还没收费，大家赶紧多用起来吧。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='https://trello-attachments.s3.amazonaws.com/5077867e6c9e9ab02045024b/525acbaf7229603c460038bb/0d85a4fac5795de5258cf8ff8f07ab36/upload_2013-10-14_at_12.59.28_am.png_500x500.png' /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id='jsmodelerlego'&gt;&lt;a href='http://kovacsv.github.io/JSModeler/documentation/examples/legobuilder.html'&gt;新工具:JSModeler，页面完成你的lego堡垒&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;JSModeler，一个目测是俄罗斯人写的3D框架，但是我们这次关注的是这个框架所创作的其中一个作品，一个模拟Lego的example，试过之后感觉略为强大，闲着蛋疼真的可以搞出一个像模像样的城堡了。是不是可以用其在写个minecraft？&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='https://trello-attachments.s3.amazonaws.com/5077867e6c9e9ab02045024b/525ace1fb98be68a350051c3/f7fbbc61a26f7e38591a067b7c060494/upload_2013-10-14_at_12.50.09_am.png_500x500.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;ps：分不出作者性别，但这么不可爱肯定是男孩子&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id='flat'&gt;&lt;a href='http://tympanus.net/Development/SectionSeparators/'&gt;新工具:让分割线不在单调，各式Flat式分割线&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;大家平时是怎么分割各个部分的内容的呢？br标签，还是border。现在有了一个比较有意思的范例，让我们重新思考一下分割线的可能性，在这个页面中，作者为我们提供接近20种不同的Flat分割线方案，想起那句话叫做“Only limit by your imagation”，你们又还能做出如何有意思的分割线呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='https://trello-attachments.s3.amazonaws.com/5077867e6c9e9ab02045024b/525acf3a48f081352b0092bf/c561e822ead5659b95e0ecfe2651dd16/upload_2013-10-14_at_12.50.43_am.png_500x500.png' /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id='_3d'&gt;&lt;a href='http://www.rgba.org/r3d/3d-piano-player/'&gt;新思维: 3D钢琴演奏，学习钢琴新方式？&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;这又是一个基于three.js的新实验，小A认为如果能过结合leapmotion是不是这将会成为未来学习新技能的一种理想的方式呢，似乎可能可以通过这样的3D模拟，可以更加好的回顾自己的弹琴的是否有错误的姿势？更加让人觉得期待未来的页面3D技术了&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='https://trello-attachments.s3.amazonaws.com/5077867e6c9e9ab02045024b/525accb91a03873213008354/599a58d037497e02ba220cf8dd832351/upload_2013-10-14_at_12.52.24_am.png_500x500.png' /&gt;&lt;/p&gt;
+
+&lt;h5 id='id1'&gt;槽&lt;/h5&gt;
+
+&lt;p&gt;假期综合症，发晚了，sorry……&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>
