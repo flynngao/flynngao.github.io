@@ -15,18 +15,33 @@
                         
       </script>
     <![endif]-->
+    <script src="/assets/js/jquery-1.8.3.min.js"></script>
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
     <link href="/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link rel="shortcut icon" href="https://i.alipayobjects.com/e/201311/1SmK7nhovl.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="container">
+    <div class="container csstransforms">
       <div class="header">
-        <div class="img">
+        <div class="component ">
+        <button class="cn-button" id="cn-button">
           <a href=""><img src="http://tp2.sinaimg.cn/1674540501/180/40013708336/1" alt="header" width="80"
           height="80">
           </a>
-        </div> 
+        </button>
+        <div class="cn-wrapper " id="cn-wrapper">
+          <ul>
+            <li><a href="#"><span>About</span></a></li>
+            <li><a href="#"><span>Tutorials</span></a></li>
+            <li><a href="#"><span>Articles</span></a></li>
+            <li><a href="#"><span>Snippets</span></a></li>
+            <li><a href="#"><span>Plugins</span></a></li>
+            <li><a href="#"><span>Contact</span></a></li>
+            <li><a href="#"><span>Follow</span></a></li>
+           </ul>
+        </div>
+        <!-- End of Nav Structure -->
+      </div>
 <!--        <div class="links">
           <a href="/">Blogs</a>
           <a href="/about.html">About</a>
@@ -37,6 +52,21 @@
       </div>
       <!-- /container -->
     </div>
+    <script>
+      $(document).ready(function ($) {
+          $('#cn-button').click(function (e) {
+            e.preventDefault();
+            var nav = $('#cn-wrapper');
+            if(nav.hasClass('opened-nav')){
+              nav.removeClass('opened-nav');
+            } else {
+              nav.addClass('opened-nav');
+            }
+
+            
+          });
+      })
+    </script>
   </body>
 
 </html>
