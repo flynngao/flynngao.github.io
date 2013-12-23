@@ -8,7 +8,7 @@ layout: page
     <article class='{{post.icon}}'>
     	
     	<div class="">	    
-    		<h3><a class='title' href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><span class='date fn-hide'>{{ post.date | date_to_string }}</span>
+    		<h3><span class='date'>{{ post.date | date:"%m.%d"}}</span><a class='title' href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
           </h3>
  
     	</div>

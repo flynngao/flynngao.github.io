@@ -32,17 +32,8 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     
 }
-
-.header .links a {
-    display:inline-block;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: 700;
-    
-}
-
 .index-page {
-    text-align: center;
+    text-align: left;
 }
 
 .index-page h3 a {
@@ -52,8 +43,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .index-page h3 a:hover {
     color:red;
-    -webkit-transition: color .3s ease,border-color .1s ease,background-color 1s ease,opacity .3s ease;
-    transition: color .3s ease,border-color .1s ease,background-color 1s ease,opacity .3s ease;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+}
+.index-page .date{
+    width:150px;
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 20%;
 }
 
 .pagination {
