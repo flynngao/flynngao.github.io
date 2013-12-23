@@ -33,6 +33,9 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 .index-page {
+    text-align: center;
+}
+.index-page .posts{
     text-align: left;
 }
 
@@ -40,6 +43,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #222;
     letter-spacing: 0.2px;
 }
+
 
 .index-page h3 a:hover {
     color:red;
@@ -50,8 +54,35 @@ h1,h2,h3,h4,h5,h6 {
     width:150px;
     text-align: right;
     margin-right: 50px;
-    margin-left: 20%;
+    color:#dadada;
+    margin-left: 15%;
 }
+@media (min-width: 768px){
+    .container{
+        width:750px;
+    }
+}
+@media (max-width: 768px){
+    .index-page h3{
+        font-size: 30px;
+    }
+    .index-page .date{
+        margin-left:15%; 
+    }
+}
+@media (max-width: 550px){
+    .index-page .date{
+        display:none;
+    }
+    .index-page .posts{
+        text-align: center;
+    }
+    
+    .content img{
+        width:290px;
+    }
+}
+
 
 .pagination {
     margin: 100px auto 100px;
@@ -81,6 +112,7 @@ h1,h2,h3,h4,h5,h6 {
     opacity: 0.1;
     cursor: default;
 }
+
 
 .cn-button {
     position: absolute;
@@ -166,7 +198,6 @@ h1,h2,h3,h4,h5,h6 {
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    pointer-events: auto;
 }
 
 .csstransforms .cn-wrapper li {
@@ -203,10 +234,10 @@ h1,h2,h3,h4,h5,h6 {
     width: 14.5em;
     height: 14.5em;
     border-radius: 50%;
-    background: #429a67;
-    background: -webkit-radial-gradient(transparent 35%, #429a67 35%);
-    background: -moz-radial-gradient(transparent 35%, #429a67 35%);
-    background: radial-gradient(transparent 35%, #429a67 35%);
+    /*background: #429a67;*/
+    /*background: -webkit-radial-gradient(transparent 35%, transparent 35%);
+    background: -moz-radial-gradient(transparent 35%, transparent 35%);
+    background: radial-gradient(transparent 35%, transparent 35%);*/
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -233,9 +264,9 @@ h1,h2,h3,h4,h5,h6 {
 .csstransforms .cn-wrapper li a:hover,
 .csstransforms .cn-wrapper li a:active,
 .csstransforms .cn-wrapper li a:focus {
-    background: -webkit-radial-gradient(transparent 35%, #222 35%);
-    background: -moz-radial-gradient(transparent 35%, #222 35%);
-    background: radial-gradient(transparent 35%, #222 35%);
+    background: -webkit-radial-gradient(transparent 35%, #222 35%)!important;
+    background: -moz-radial-gradient(transparent 35%, #222 35%)!important;
+    background: radial-gradient(transparent 35%, #222 35%)!important;
 }
 
 .csstransforms .opened-nav li {
@@ -244,54 +275,79 @@ h1,h2,h3,h4,h5,h6 {
     transition: all .3s ease .3s;
 }
 
-.csstransforms .opened-nav li:first-child {
+/*.csstransforms .opened-nav li:first-child {
     -webkit-transform: rotate(-20deg) skew(60deg);
     -moz-transform: rotate(-20deg) skew(60deg);
     -ms-transform: rotate(-20deg) skew(60deg);
     transform: rotate(-20deg) skew(60deg);
-}
+}*/
 
-.csstransforms .opened-nav li:nth-child(2) {
+.csstransforms .opened-nav li:first-child {
+
     -webkit-transform: rotate(12deg) skew(60deg);
     -moz-transform: rotate(12deg) skew(60deg);
     -ms-transform: rotate(12deg) skew(60deg);
     transform: rotate(12deg) skew(60deg);
 }
+.csstransforms  li:first-child a{
+    background: -webkit-radial-gradient(transparent 35%, #c0392b 35%);
+    background: -moz-radial-gradient(transparent 35%, #c0392b 35%);
+    background: radial-gradient(transparent 35%, #c0392b 35%);
+}
 
-.csstransforms .opened-nav  li:nth-child(3) {
+.csstransforms .opened-nav  li:nth-child(2) {
     -webkit-transform: rotate(44deg) skew(60deg);
     -moz-transform: rotate(44deg) skew(60deg);
     -ms-transform: rotate(44deg) skew(60deg);
     transform: rotate(44deg) skew(60deg);
 }
+.csstransforms  li:nth-child(2) a{
+    background: -webkit-radial-gradient(transparent 35%, #d35400 35%);
+    background: -moz-radial-gradient(transparent 35%, #d35400 35%);
+    background: radial-gradient(transparent 35%, #d35400 35%);
+}
 
-.csstransforms .opened-nav li:nth-child(4) {
+.csstransforms .opened-nav li:nth-child(3) {
     -webkit-transform: rotate(76deg) skew(60deg);
     -moz-transform: rotate(76deg) skew(60deg);
     -ms-transform: rotate(76deg) skew(60deg);
     transform: rotate(76deg) skew(60deg);
 }
-
-.csstransforms .opened-nav li:nth-child(5) {
+.csstransforms li:nth-child(3) a{
+    background: -webkit-radial-gradient(transparent 35%, #2980b9 35%);
+    background: -moz-radial-gradient(transparent 35%, #2980b9 35%);
+    background: radial-gradient(transparent 35%, #2980b9 35%);
+}
+.csstransforms .opened-nav li:nth-child(4) {
     -webkit-transform: rotate(108deg) skew(60deg);
     -moz-transform: rotate(108deg) skew(60deg);
     -ms-transform: rotate(108deg) skew(60deg);
     transform: rotate(108deg) skew(60deg);
 }
+.csstransforms  li:nth-child(4) a{
+    background: -webkit-radial-gradient(transparent 35%, #27ae60 35%);
+    background: -moz-radial-gradient(transparent 35%, #27ae60 35%);
+    background: radial-gradient(transparent 35%, #27ae60 35%);
+}
 
-.csstransforms .opened-nav li:nth-child(6) {
+.csstransforms .opened-nav li:nth-child(5) {
     -webkit-transform: rotate(140deg) skew(60deg);
     -moz-transform: rotate(140deg) skew(60deg);
     -ms-transform: rotate(140deg) skew(60deg);
     transform: rotate(140deg) skew(60deg);
 }
+.csstransforms  li:nth-child(5) a{
+    background: -webkit-radial-gradient(transparent 35%, #8e44ad 35%);
+    background: -moz-radial-gradient(transparent 35%, #8e44ad 35%);
+    background: radial-gradient(transparent 35%, #8e44ad 35%);
+}
 
-.csstransforms .opened-nav li:nth-child(7) {
+/*.csstransforms .opened-nav li:nth-child(7) {
     -webkit-transform: rotate(172deg) skew(60deg);
     -moz-transform: rotate(172deg) skew(60deg);
     -ms-transform: rotate(172deg) skew(60deg);
     transform: rotate(172deg) skew(60deg);
-}
+}*/
 
 .no-csstransforms .cn-wrapper {
     overflow: hidden;

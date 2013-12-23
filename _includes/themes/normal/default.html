@@ -21,24 +21,24 @@
     <link rel="shortcut icon" href="https://i.alipayobjects.com/e/201311/1SmK7nhovl.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="container csstransforms">
-      <div class="header">
+    <div class="container ">
+      <div class="header csstransforms">
         <div class="component ">
         <button class="cn-button" id="cn-button">
           <a href=""><img class="first" src="http://tp2.sinaimg.cn/1674540501/180/40013708336/1" alt="header" width="80"
           height="80">
-          <img class="random" src="http://pic1.sc.chinaz.com/Files/pic/faces/2241/28.gif" alt="header" width="80"
+          <img class="random"  onerror="this.src=window.flynn_imgAdd+window.flynn_img+'.gif'" alt="header" width="80"
           height="80">
           </a>
         </button>
         <div class="cn-wrapper " id="cn-wrapper">
           <ul>
             <li><a href="/"><span class="iconfont">&#x3636;</span></a></li>
-            <li><a href="/projects"><span class="iconfont">&#x3641;</span></a></li>
-            <li><a href="#"><span class="iconfont">&#x3639;</span></a></li>
-            <li><a href="#"><span class="iconfont">&#x363a;</span></a></li>
-            <li><a href="#"><span class="iconfont">&#x36a2;</span></a></li>
-            <li><a href="#"><span class="iconfont">&#x363c;</span></a></li>
+            <li><a href="/works" title="works"><span class="iconfont">&#x3641;</span></a></li>
+            <li><a href="http://weibo.com/u/1674540501" title="weibo"><span class="iconfont">&#x3639;</span></a></li>
+            <li><a href="https://github.com/flynngao" title="github"><span class="iconfont">&#x363a;</span></a></li>
+            <!-- <li><a href="#"><span class="iconfont">&#x36a2;</span></a></li>
+            <li><a href="#"><span class="iconfont">&#x363c;</span></a></li> -->
             <li><a href="/about"><span class="iconfont">&#x363d;</span></a></li>
            </ul>
         </div>
@@ -56,12 +56,20 @@
     </div>
     <script>
       $(document).ready(function ($) {
+         var imgAdd = window.flynn_imgAdd = "http://pic-001.b0.upaiyun.com/miao/miao";
+         var img = window.flynn_img= parseInt(Math.random()*131);
+
+         $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
+
           $('#cn-button').click(function (e) {
             e.preventDefault();
             var nav = $('#cn-wrapper');
             if(nav.hasClass('opened-nav')){
               nav.removeClass('opened-nav');
               $(this).removeClass('clicked');
+              img = window.flynn_img = parseInt(Math.random()*131+1);
+              $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
+
             } else {
               nav.addClass('opened-nav');
               $(this).addClass('clicked');
@@ -69,6 +77,8 @@
 
             
           });
+
+
       })
     </script>
   </body>
