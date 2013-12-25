@@ -24,7 +24,7 @@ layout: page
       </li>
 
     {% for count in (2..paginator.total_pages) %}
-      <li {% if count == paginator.page %} class="page" {% endif %}>
+      <li {% if count == paginator.page %} class="active" {% endif %}>
           <a href="/page{{ count }}">{{ count }}</a>
       </li>
     {% endfor %}
