@@ -1,0 +1,12 @@
+.ab-long{
+    height: 10000px;
+}
+
+.ab-bgscreen{
+    position: absolute;
+    top:0;
+    background: url('/assets/images/abt_bg.png') 0 0 repeat-x;
+    background-size:50%;
+    height:100%;
+    width: 10000px;
+}
