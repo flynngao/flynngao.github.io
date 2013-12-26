@@ -426,12 +426,12 @@ code {
 pre {
   padding: 8px;
   margin: 0 0 15px;
-  font-size: 13px;
+  font-size: 16px;
+  font-style: italic;
   line-height: 1.72222;
-  color: inherit;
+  color: #aaa;
   background-color: #ffffff;
-  border: 2px solid #e7e9ec;
-  border-radius: 6px;
+  border-left: 5px solid #aaa;
   white-space: pre;
 }
 .pre-scrollable {
