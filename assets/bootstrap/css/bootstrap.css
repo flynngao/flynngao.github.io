@@ -370,7 +370,11 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  background:#bbb;
+  width:5px;
+  height:5px;
+  border-radius: 5px;
+  /*border-top: 1px solid #eeeeee;*/
 }
 
 .sr-only {
