@@ -107,7 +107,7 @@ body .fn-hide {
 /*preScene*/
 #preScene{
     background:url(../images/firstend.png);
-    background-size: 100% auto;
+    background-size:auto 100%;
     top:0;
     height:100%;
     position:relative;
@@ -151,7 +151,7 @@ body .fn-hide {
 /*endpreScene*/
 #endpreScene{
     background:url(../images/firstend.png);
-    background-size: 100% auto;
+    background-size:auto 100%;
     position:absolute;
     top:0;
     height:100%;
