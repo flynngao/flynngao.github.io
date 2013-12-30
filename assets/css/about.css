@@ -151,7 +151,7 @@ body .fn-hide {
 /*endpreScene*/
 #endpreScene{
     background:url(../images/firstend.png);
-    background-size:auto 100%;
+    background-size:auto 100%; 
     position:absolute;
     top:0;
     height:100%;
