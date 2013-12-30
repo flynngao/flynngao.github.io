@@ -1,12 +1,177 @@
-.ab-long{
-    height: 10000px;
+html,body{
+    margin:0;
+}
+@font-face {
+    font-family: "LCD";
+    src: url('../images/LCD_Solid.ttf') format("truetype");
+}
+.fn-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
-.ab-bgscreen{
-    position: absolute;
-    top:0;
-    background: url('/assets/images/abt_bg.png') 0 0 repeat-x;
-    background-size:50%;
-    height:100%;
-    width: 10000px;
+body .fn-hide {
+    display: none;
 }
+
+.fn-left, .fn-right {
+    display: inline;
+}
+
+.fn-left {
+    float: left;
+}
+
+.fn-right {
+    float: right;
+}
+
+.title-font{
+    font-family: "LCD";
+    font-size: 80px;
+}
+.level-font{
+    font-family: "LCD";
+    font-size: 30px;
+}
+
+
+
+.page{
+    position:relative;
+    z-index: -1;
+    background-image:-webkit-linear-gradient(left,#401D61 50.0% ,#5e2400 50.0%);
+    background-image:-moz-linear-gradient(left,#401D61 50.0% ,#5e2400 50.0%);;
+
+    height:22000px;
+}
+.pagereturn{
+    background-image:-webkit-linear-gradient(left,#5e2400 50.0% ,#401D61 50.0%)!important;
+    background-image:-moz-linear-gradient(left,#5e2400 50.0% ,#401D61 50.0%)!important;
+}
+.scenes{
+    border:0;
+    width:150%;
+    height:100%;
+    top:0%;
+    left:-25%; 
+    overflow:hidden;
+    position:fixed;
+    -webkit-transform: rotate(0);
+}
+
+.scenes .citybg{
+    position:absolute;
+    /*margin-top:5%;*/
+    width:25000px;
+    height:100%;
+    background:url(../images/abt-bg.png);
+    background-size:auto 100%;
+}
+.scenes #tu{
+    position:absolute;
+    background:url(../images/tu.png) 0 0 no-repeat;
+    bottom:9%;
+    left:50%;
+    margin-left: -41px;
+    width:81px;
+    height:112px;
+
+}
+.scene{
+    float:left;
+    height:91%;
+    width:4000px;
+    position:relative;
+}
+.scene .level{
+    position: absolute;
+    bottom:0;
+    width:200px;
+    height:300px;
+    
+    background:url(../images/level.png) 0 bottom no-repeat;
+    background-size:100% auto;
+}
+.scene .level span{
+    width: 128px;
+    position: absolute;
+    top: 100px;
+    left: 32px;
+    text-align: center;
+}
+/*preScene*/
+#preScene{
+    background:url(../images/firstend.png);
+    background-size: 100% auto;
+    top:0;
+    position:relative;
+}
+#preScene .startTitle{
+    position:absolute;
+    top:30%;
+    width:550px;
+    text-align: center;
+    left:50%;
+    color:#fff;
+    margin-left: -275px;
+}
+#preScene .floor{
+    width:100%;
+    height:300px;
+    background:#222;
+    position:absolute;
+    bottom: 0;
+}
+/*firstScene*/
+/*endScene*/
+#endScene{
+    position:absolute;
+    right:4000px;
+}
+#endScene .gameover{
+    height:100%;
+    text-align: center;
+    padding-top: 5%;
+    color:#fff;
+    font-size: 100px;
+}
+#endScene .andover{
+    height:100%;
+    text-align: center;
+    padding-top: 5%;
+    color:#fff;
+    font-size: 100px;
+}
+/*endpreScene*/
+#endpreScene{
+    background:url(../images/firstend.png);
+    background-size: 100% auto;
+    position:absolute;
+    top:0;
+    height:91%;
+}
+#endpreScene .startTitle{
+
+    position:absolute;
+    top:30%;
+    width:550px;
+    left:50%;
+    text-align: center;
+    color:#fff;
+    margin-left: -275px;
+}
+#endpreScene .floor{
+    width:100%;
+    height:300px;
+    background:#222;
+    position:absolute;
+    bottom: 0;
+}
+
+
+
