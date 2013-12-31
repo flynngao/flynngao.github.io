@@ -5,6 +5,10 @@ html,body{
     font-family: "LCD";
     src: url('../images/LCD_Solid.ttf') format("truetype");
 }
+@font-face{
+    font-family: "pixel-g";
+    src:url('../images/Pixel Gosub.otf') format("truetype");
+}
 .fn-clear:after {
     visibility: hidden;
     display: block;
@@ -129,6 +133,34 @@ body .fn-hide {
     bottom: 0;
 }
 /*firstScene*/
+.chapter{
+    font-family: "pixel-g";
+    font-size: 100px;
+    position:absolute;
+    left:300px;
+    top:25%;
+
+}
+.chapter .title{
+    color:#eee;
+    background:#222;
+    border:10px solid #01F805; 
+    line-height: 1;
+    padding:0 0px 18px 17px;
+}
+
+#firstScene .form{
+    position:absolute;
+    left:1000px;
+}
+
+.chapter .Galaxian{
+    background:url(../images/key.png) center 0 no-repeat;
+    background-size:auto 100% ;
+    top:100%;
+    height:150px;
+}
+
 /*endScene*/
 #endScene{
     position:absolute;
