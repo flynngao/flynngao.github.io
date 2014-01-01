@@ -53,6 +53,8 @@ var eventhadle = {
     }else{
         $('.page').removeClass('pagereturn');
     }
+    // chapter rotate
+    rotate($('.chapter'),360-deg);
     // sceneshow
     sceneshow[pos](turn-pos);
 
@@ -96,11 +98,18 @@ var main = {
   preload: function() {
 
   },
-
-
+  underground: function() {
+    $('.underground').each(function () {
+        for (var i = 41 ; i >= 0; i--) {     
+            $(this).append("<div class='Galaxian-sc'></div>");
+        }
+    });
+  },
   init: function() {
+    var self = this
     $(document).ready(function() {
         eventhadle.resize();
+        self.underground();
     });
   }
 };
