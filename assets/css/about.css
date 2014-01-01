@@ -138,35 +138,8 @@ body .fn-hide {
     top:100%;
     height:150px;
 }
-
-/*preScene*/
-#preScene{
-    background:url(../images/firstend.png);
-    background-size:auto 100%;
-    top:0;
-    height:100%;
-    position:relative;
-}
-#preScene .startTitle{
+.form {
     position:absolute;
-    top:30%;
-    width:550px;
-    text-align: center;
-    left:50%;
-    color:#fff;
-    margin-left: -275px;
-}
-#preScene .floor{
-    width:100%;
-    height:300px;
-    background:#222;
-    position:absolute;
-    bottom: 0;
-}
-/*firstScene*/
-#firstScene .form{
-    position:absolute;
-    left:800px;
     bottom:0;
     width:700px;
     height:100%;
@@ -210,6 +183,44 @@ body .fn-hide {
     font-weight: 700;
     text-align: right;
 }
+.vform{
+    position:relative;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.vform .vtitle{
+    position:absolute;
+    bottom:-15%;
+    color: #f6f634;
+    font-size: 40px;
+    font-family: 'pixel-g';
+    width:500px;
+    text-align: center;
+    left:50%;
+    margin-left:-250px;
+}
+.vform .list{
+    float:right;
+}
+.vform .list span{
+    display:block;
+    
+}
+.vform .list .list-title{
+    font-family: "LCD";
+    border-bottom: 2px solid #fff;
+    color:#eee;
+    margin-right:25px;
+    padding-top: 29px;
+    font-size: 20px;
+    width:150px;
+    font-weight: 700;
+    text-align: center;
+}
+
 .Galaxian-sc{
     background:url(../images/Galaxian-sc.png) 0 0 no-repeat;
     background-size:auto 100%;
@@ -234,11 +245,42 @@ body .fn-hide {
     width:70px;
     height:50px;
 }
+/*preScene*/
+#preScene{
+    background:url(../images/firstend.png);
+    background-size:auto 100%;
+    top:0;
+    height:100%;
+    position:relative;
+}
+#preScene .startTitle{
+    position:absolute;
+    top:30%;
+    width:550px;
+    text-align: center;
+    left:50%;
+    color:#fff;
+    margin-left: -275px;
+}
+#preScene .floor{
+    width:100%;
+    height:300px;
+    background:#222;
+    position:absolute;
+    bottom: 0;
+}
+/*firstScene*/
+#firstScene .code{
+    left:800px;
+}
 #firstScene .useless-lot{
     position:absolute;
     left:1500px;
     margin-left: -29px;
     height:100%;
+}
+#firstScene .where{
+    left:3000px;
 }
 #firstScene .useless-lot div{
     position:absolute;
@@ -338,11 +380,31 @@ body .fn-hide {
     bottom:6%;
     left:950px;
 }
-
+#firstScene .where img{
+    display:block;
+    height:100%;
+    margin:30px auto;
+}
 /*secondScene*/
 #secondScene{
     position: relative;
 }
+#secondScene .frontend{
+    position:absolute;
+    left:1200px;
+
+}
+#secondScene .code{
+    position:absolute;
+    left:2200px;
+    
+}
+#secondScene .embedded{
+    position:absolute;
+    left:3200px;
+    
+}
+
 
 /*endScene*/
 #endScene{
