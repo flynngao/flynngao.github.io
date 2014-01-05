@@ -80,7 +80,10 @@ var tu_action = {
      // body...
    }
 };
-
+document.addEventListener("touchmove", function  () {
+  $('.scenes .citybg').css('left', -pageYOffset);
+  eventhadle.scroll();
+}, false);
 
 
 window.onscroll = function() {
