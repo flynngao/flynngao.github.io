@@ -251,29 +251,46 @@ body .fn-hide {
     width:70px;
     height:50px;
 }
-.starwars1{
-    background:url(../images/starwar1.png) 0 0 no-repeat;
+
+.Invader-1{
+    background:url(../images/Invader-1.png) 0 0 no-repeat;
     background-size:100% auto;
     padding:5px;
     margin: 10px;
     width:100px;
     height:130px;
 }
-.starwars2{
-    background:url(../images/starwar2.png) 0 0 no-repeat;
+.Invader-2{
+    background:url(../images/Invader-2.png) 0 0 no-repeat;
     background-size:100% auto;
     padding:5px;
     margin: 10px;
     width:100px;
     height:130px;
 }
-.starwars3{
-    background:url(../images/starwar3.png) 0 0 no-repeat;
+.Invader-3{
+    background:url(../images/Invader-3.png) 0 0 no-repeat;
     background-size:100% auto;
     padding:5px;
     margin: 10px;
     width:100px;
     height:130px;
+}
+.Invader-4{
+    background:url(../images/Invader-4.png) 0 0 no-repeat;
+    background-size:100% auto;
+    padding:5px;
+    margin: 10px;
+    width:700px;
+    height:300px;
+}
+.Invader-5{
+    background:url(../images/Invader-5.png) 0 0 no-repeat;
+    background-size:100% auto;
+    padding:5px;
+    margin: 10px;
+    width:550px;
+    height:350px;
 }
 /*preScene*/
 #preScene{
@@ -434,7 +451,20 @@ body .fn-hide {
     left:3200px;
     
 }
-
+/*thirdScene*/
+#thirdScene .form{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#thirdScene .alipay-java{
+    left:1200px;
+}
+#thirdScene .alipay-frontend{
+    left:2200px;
+}
 
 /*endScene*/
 #endScene{
