@@ -9,6 +9,15 @@ html,body{
     font-family: "pixel-g";
     src:url('../images/Pixel_Gosub.otf') format("truetype");
 }
+@font-face{
+    font-family: "3D";
+    src:url('../images/3D.ttf');
+}
+@font-face{
+    font-family: "prstartk";
+    src:url('../images/prstartk.ttf');
+}
+
 .fn-clear:after {
     visibility: hidden;
     display: block;
@@ -281,7 +290,7 @@ body .fn-hide {
     background-size:100% auto;
     padding:5px;
     margin: 10px;
-    width:700px;
+    width:500px;
     height:300px;
 }
 .Invader-5{
@@ -289,7 +298,7 @@ body .fn-hide {
     background-size:100% auto;
     padding:5px;
     margin: 10px;
-    width:550px;
+    width:350px;
     height:350px;
 }
 /*preScene*/
@@ -463,7 +472,74 @@ body .fn-hide {
     left:1200px;
 }
 #thirdScene .alipay-frontend{
-    left:2200px;
+    left:2500px;
+}
+#thirdScene .board{
+    padding: 20px;
+    color:#fff;
+    width:500px;
+    background:#333; 
+    
+    position:absolute;
+    top:250px;
+}
+#thirdScene .alipay-java .board{
+    border: 10px solid #861703;
+}
+#thirdScene .alipay-frontend .board{
+    border: 10px solid #FF2700;
+}
+#thirdScene .form{
+    width:1120px;
+}
+#thirdScene .Invader-4{
+    position:absolute;
+    top:-250px;
+}
+#thirdScene .Invader-5{
+    position:absolute;
+    top:-250px;
+    left:50%;
+    margin-left:-175px;
+}
+.board .company{
+
+    font-size: 60px;
+    color:#f6f634;
+    padding:0 10px;
+    font-family: "pixel-g";
+    text-decoration: none;
+
+}
+.board .company:hover{
+    color:#f6f634;
+    border-bottom: 1px solid #f6f634;
+}
+.board .times{
+    padding:10px;
+    font-size: 40px;
+    font-family: 'LCD';
+    color:#31af39;
+}
+
+.board .brief{
+
+    padding:10px;
+}
+.board p{
+    /*font-family: "prstartk";*/
+}
+.position{
+    position:absolute;
+    top:300px;
+    right:0px;
+    padding:20px;
+    width:550px;
+    border-radius: 20px;
+    font-family: "3D";
+    color:#333;
+    background:#ccc;
+    font-size: 120px;
 }
 
 /*endScene*/

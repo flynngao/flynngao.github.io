@@ -44,7 +44,7 @@ var eventhadle = {
     var times = 180;
     var deg = ((turn - pos) * times < 90) && pos > 0 ? -((turn - pos) * times + (pos - 1) * 90) : -(pos) * 90;
     rotate($('.scenes'), deg);
-    if (pageYOffset > 21200){
+    if (pageYOffset > 21000){
       window.scrollTo(0,0); 
     }
     // background color
@@ -65,7 +65,7 @@ var eventhadle = {
     $(".scenes .citybg").css("padding-left",-$('.scenes').offset().left);
 
     // 
-    $("#endpreScene").css("left",(21200-$('.scenes').offset().left));
+    $("#endpreScene").css("left",(21000-$('.scenes').offset().left));
 
     // doms which needs whole window view
     $('#preScene,#endScene .gameover,#endScene .andover,#endpreScene').css('width', w);
