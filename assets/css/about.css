@@ -52,8 +52,54 @@ body .fn-hide {
     font-size: 30px;
 }
 
+.loading{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#222;
+    z-index: 9999;
+}
+.loading .startTitle{
+    position: absolute;
+    top:35%;
+    left:50%;
+    color:#Fff;
+}
+.loading .spinner {
+  position:absolute;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  left:50%;
 
+  background-color: #fff;
 
+  margin-left: -50px;
+  margin-top: -50px;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
 .page{
     position:relative;
     z-index: -1;
@@ -321,7 +367,7 @@ body .fn-hide {
 }
 #preScene .startTitle{
     position:absolute;
-    top:30%;
+    top:35%;
     width:550px;
     text-align: center;
     left:50%;
@@ -334,6 +380,26 @@ body .fn-hide {
     background:#222;
     position:absolute;
     bottom: 0;
+}
+#preScene .email{
+    font-family: 'LCD';
+    position:absolute;
+    color:#ddd;
+    font-size: 30px;
+    top:60%;
+    left:50%;
+    text-align: center;
+    width:510px;
+    margin-left: -275px;
+}
+#preScene .email a{
+    color:#fff;
+}
+#preScene .tops{
+    position:absolute;
+    left:50%;
+    margin-left:-40px;
+    top:-300px;
 }
 /*firstScene*/
 #firstScene .code{
@@ -536,8 +602,8 @@ body .fn-hide {
 
     padding:10px;
 }
-.board p{
-    /*font-family: "prstartk";*/
+.board p a{
+    color:#f6f634;
 }
 .position{
     position:absolute;
@@ -575,8 +641,14 @@ body .fn-hide {
 }
 #forthScene .more{
     color:#Fff;
+    width:600px;
     font-family: "pixel-g";
     font-size: 80px;
+}
+#forthScene .fly{
+    position:absolute;
+    left:3900px;
+    bottom:-130px;
 }
 
 /*endScene*/
@@ -599,6 +671,15 @@ body .fn-hide {
     font-size: 100px;
 }
 /*endpreScene*/
+#endpreScene .tops{
+
+    position:absolute;
+    left:50%;
+    margin-left:-40px;
+    top:-300px;
+}
+
+
 #endpreScene{
     background:url(../images/firstend.png);
     background-size:auto 100%; 
@@ -609,7 +690,7 @@ body .fn-hide {
 #endpreScene .startTitle{
 
     position:absolute;
-    top:30%;
+    top:35%;
     width:550px;
     left:50%;
     text-align: center;
@@ -622,6 +703,20 @@ body .fn-hide {
     background:#222;
     position:absolute;
     bottom: 0;
+}
+#endpreScene .email{
+    font-family: 'LCD';
+    position:absolute;
+    color:#ddd;
+    font-size: 30px;
+    top:60%;
+    left:50%;
+    text-align: center;
+    width:510px;
+    margin-left: -275px;
+}
+#endpreScene .email a{
+    color:#fff;
 }
 
 
