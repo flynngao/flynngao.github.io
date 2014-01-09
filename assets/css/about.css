@@ -60,7 +60,7 @@ body .fn-hide {
     background-image:-webkit-linear-gradient(left,#401D61 50.0% ,#5e2400 50.0%);
     background-image:-moz-linear-gradient(left,#401D61 50.0% ,#5e2400 50.0%);;
 
-    height:22000px;
+    height:21800px;
 }
 .pagereturn{
     background-image:-webkit-linear-gradient(left,#5e2400 50.0% ,#401D61 50.0%)!important;
@@ -88,7 +88,7 @@ body .fn-hide {
 .scenes .citybg{
     position:absolute;
     /*margin-top:5%;*/
-    width:25000px;
+    width:24800px;
     height:100%;
     background:url(../images/abt-bg.png);
     background-size:auto 100%;
@@ -201,6 +201,16 @@ body .fn-hide {
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+.vtform{
+    bottom:0;
+    position:relative;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
 .vform .vtitle{
     
     position:absolute;
@@ -540,6 +550,33 @@ body .fn-hide {
     color:#333;
     background:#ccc;
     font-size: 120px;
+}
+/*forthScene*/
+#forthScene .RHCE{
+    color:#Fff;
+    font-family: "pixel-g";
+    font-size: 80px;
+}
+#forthScene .RHCE i{
+    background:url('../images/redhat.png') center center;
+    background-size: 100%;
+    width:250px;
+    height:250px;
+    display:inline-block;
+}
+#forthScene .RHCE span{
+    display:inline-block;
+    padding:10px;
+    line-height: -10px;    
+}
+#forthScene .vtform{
+    width:800px;
+    left:800px;
+}
+#forthScene .more{
+    color:#Fff;
+    font-family: "pixel-g";
+    font-size: 80px;
 }
 
 /*endScene*/

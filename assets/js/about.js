@@ -35,6 +35,11 @@ console.log(inpos,"5")
   },
 ];
 
+var emailshow = function  () {
+  
+};
+
+var first = false;
 
 var eventhadle = {
   scroll: function() {
@@ -46,6 +51,7 @@ var eventhadle = {
     rotate($('.scenes'), deg);
     if (pageYOffset > 21000){
       window.scrollTo(0,0); 
+      first = true;
     }
     // background color
     if(pos>2){
