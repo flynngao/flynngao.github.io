@@ -31,7 +31,7 @@ var sceneshow = [
   },
   // end
   function(inpos) {
-    console.log(inpos)
+    
     if (inpos > 0.03) {
       $($('#forthScene .fly .Galaxian-sc').get().reverse()).each(function(index) {
               var self = this;
