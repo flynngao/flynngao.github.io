@@ -152,6 +152,8 @@ var main = {
     window.onresize = function() {
       eventhadle.resize();
     };
+
+    $('.page').css('height',"22000px");
     
   },init:function  () {
     var self = this
