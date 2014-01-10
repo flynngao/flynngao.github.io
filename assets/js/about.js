@@ -15,15 +15,15 @@ function rotate(object, degrees) {
 var sceneshow = [
   // first
   function(inpos) {
-    console.log(inpos, "1")
+    // console.log(inpos, "1")
   },
   // seconde
   function(inpos) {
-    console.log(inpos, "2")
+    // console.log(inpos, "2")
   },
   // third
   function(inpos) {
-    console.log(inpos, "3")
+    // console.log(inpos, "3")
   },
   // forth
   function(inpos) {
@@ -80,7 +80,6 @@ var eventhadle = {
       }
 
     }
-    console.log(pageYOffset);
     // background color
     if (pos > 2) {
       $('.page').addClass('pagereturn');
