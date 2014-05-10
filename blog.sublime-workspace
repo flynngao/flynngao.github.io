@@ -4,16 +4,76 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"stat",
+				"startTitle"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"pre",
+				"preScene"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"fir",
+				"first	first"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"forth",
+				"forthScene"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"P",
+				"Pixel_Gosub"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"third",
+				"thirdScene"
+			],
+			[
+				"thir",
+				"thirdScene"
+			],
+			[
 				"tr",
 				"trf	transform"
 			],
 			[
 				"seco",
 				"secondScene"
-			],
-			[
-				"fir",
-				"firstScene"
 			],
 			[
 				"und",
@@ -32,24 +92,12 @@
 				"border"
 			],
 			[
-				"fon",
-				"font-family"
-			],
-			[
 				"first",
 				"firstScene"
 			],
 			[
-				"mar",
-				"margin-left"
-			],
-			[
 				"us",
 				"useless-lot"
-			],
-			[
-				"pad",
-				"padding-top"
 			],
 			[
 				"fl",
@@ -74,10 +122,6 @@
 			[
 				"cha",
 				"chapter"
-			],
-			[
-				"b",
-				"border"
 			],
 			[
 				"G",
@@ -110,10 +154,6 @@
 			[
 				"do",
 				"document"
-			],
-			[
-				"bor",
-				"border-radius"
 			],
 			[
 				"swi",
@@ -348,10 +388,6 @@
 				"request"
 			],
 			[
-				"le",
-				"letter-spacing"
-			],
-			[
 				"wei",
 				"-webkit-font-smoothing"
 			],
@@ -478,76 +514,19 @@
 			[
 				"alipay",
 				"alipayMoney"
-			],
-			[
-				"cl",
-				"cl	clear: ${1:both};"
-			],
-			[
-				"ren",
-				"renderTo"
-			],
-			[
-				"cae",
-				"categories"
-			],
-			[
-				"cate",
-				"cateChart"
-			],
-			[
-				"under",
-				"underData"
-			],
-			[
-				"chan",
-				"channel"
-			],
-			[
-				"ch",
-				"channal"
-			],
-			[
-				"cont",
-				"container"
-			],
-			[
-				"setI",
-				"setIntervalS"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"contents": "<!doctype html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"apple-mobile-web-app-capable\" content=\"yes\"/>\n        <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\"/>\n        <meta name=\"format-detection\" content=\"telephone=no\"/>\n        <meta name=\"format-detection\" content=\"email=no\"/>\n        <meta name=\"viewport\"\n          content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0\"/>\n        <link rel=\"icon\" \n      type=\"image/png\" \n      href=\"/assets/images/favicon.ico\">\n        <title>\n            Flynngao's Resume\n        </title>\n        <link rel=\"stylesheet\" href=\"/assets/css/about.css\">\n        <script src=\"http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js\">\n                \n        </script>\n        <script src=\"/assets/js/about.js\">\n                \n        </script>\n    </head>\n    <body>\n        <div class=\"loading\">\n            <div class=\"spinner\"></div>\n        </div>\n        <div class=\"page\">\n        </div>\n        <div class=\"scenes \">\n            <div class=\"citybg fn-clear\">\n                <div id=\"preScene\" class=\"scene\">\n                    <div class=\"tops\">\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                    </div>\n                    <div class=\"startTitle title-font\">\n                        Flynn Gao's Resume\n                    </div>\n\n                    <div class=\"email fn-hide\">\n                        Email: <a href=\"mailto://flynn.gao.y@gmail.com\">flynn.gao.y@gmail.com</a>\n                        <iframe src=\"http://ghbtns.com/github-btn.html?user=flynngao&repo=flynngao.github.io&type=watch&count=true&size=large\" height=\"30\" width=\"170\" frameborder=\"0\" scrolling=\"0\" style=\"width:170px; height: 30px;\" allowTransparency=\"true\"></iframe>\n                    </div>\n\n                </div>\n                <div id=\"firstScene\" class=\"scene\">\n                    <div class=\"level\">\n                        <span class=\"level-font\">\n                            Tragedy 1\n                        </span>\n                    </div>\n                    <div class=\"chapter\">\n                        <div class=\"title\">\n                            About\n                        </div>\n                        <div class=\"Galaxian\">\n                        </div>\n                    </div>\n                    <div class=\"form code\">\n                        <div class=\"title\">\n                            Coder & Designer\n                        </div>\n                        <div class=\"coding list fn-clear\">\n                            <span class=\"list-title\">\n                                CODING\n                            </span>\n                            <span class=\"Galaxian-sr\">\n                            </span>\n                            <span class=\"Galaxian-sr\">\n                            </span>\n                            <span class=\"Galaxian-sr\">\n                            </span>\n                            <span class=\"Galaxian-sr\">\n                            </span>\n                        </div>\n                        <div class=\"design list fn-clear\">\n                            <span class=\"list-title\">\n                                DESIGN\n                            </span>\n                            <span class=\"Galaxian-sy\">\n                            </span>\n                            <span class=\"Galaxian-sy\">\n                            </span>\n                        </div>\n                        <div class=\"useless list fn-clear\">\n                            <span class=\"list-title\">\n                                USELESS IMAGINATION\n                            </span>\n                            <span class=\"Galaxian-sc\">\n                            </span>\n                            <span class=\"Galaxian-sc\">\n                            </span>\n                            <span class=\"Galaxian-sc\">\n                            </span>\n                            <span class=\"Galaxian-sc\">\n                            </span>\n                            <span class=\"Galaxian-sc\">\n                            </span>\n                        </div>\n                    </div>\n                    <div class=\"useless-lot\">\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                    </div>\n                    <div class=\"where form\">\n                        <div class=\"title\">\n                            GAMING IN HARD MODE\n                        </div>\n                        <img src=\"../assets/images/china.png\" alt=\"\">\n                    </div>\n                </div>\n                <div id=\"secondScene\" class=\"scene\">\n                    <div class=\"level\">\n                        <span class=\"level-font\">\n                            Tragedy 2\n                        </span>\n                    </div>\n                    <div class=\"chapter\">\n                        <div class=\"title\">\n                            SKILLS\n                        </div>\n                        <div class=\"Galaxian\">\n                        </div>\n                    </div>\n                    <div class=\"vform fn-clear frontend\">\n                        <div class=\"vtitle\">\n                            Frontend Skills\n                        </div>\n                        <div class=\"js list fn-clear\">\n                           \n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                             <span class=\"list-title\">\n                                JS\n                            </span>\n                        </div>\n                        <div class=\"css list fn-clear\">\n                          \n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                             <span class=\"list-title\">\n                                CSS\n                            </span>\n                        </div>\n                        <div class=\"html list fn-clear\">\n                           \n                            \n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                             <span class=\"list-title\">\n                                HTML\n                            </span>\n                        </div>\n                        <div class=\"ps list fn-clear\">\n                           \n                            <span class=\"Invader-1\">\n                            </span>\n                            <span class=\"Invader-1\">\n                            </span>\n                             <span class=\"list-title\">\n                                PS\n                            </span>\n                        </div>\n                    </div>\n                    <div class=\"vform fn-clear code\">\n                        <div class=\"vtitle\">\n                            Languages\n                        </div>\n                        <div class=\"coding list fn-clear\">\n                            \n                                \n                                \n                           \n                            <span class=\"Invader-2\">\n                            </span>\n                            <span class=\"Invader-2\">\n                            </span>\n                            <span class=\"Invader-2\">\n                            </span>\n                            <span class=\"Invader-2\">\n                            </span>\n\n                            \n                            \n                            <span class=\"list-title\">JAVA</span>\n                        </div>\n                        <div class=\"design list fn-clear\">\n                            \n                            <span class=\"Invader-2\">\n                            </span>\n                            <span class=\"Invader-2\">\n                            </span>\n                             <span class=\"list-title\">\n                                C\n                            </span>\n                        </div>\n                        <div class=\"useless list fn-clear\">\n                            \n                            \n                            <span class=\"Invader-2\">\n                            </span>\n                            <span class=\"list-title\">\n                                PYTHON\n                            </span>\n                        </div>\n                        <div class=\"useless list fn-clear\">\n                            <span class=\"Invader-2\">\n                            </span>\n                            <span class=\"list-title\">\n                                HASKELL\n                            </span>\n                        </div>\n                    </div>\n                    <div class=\"vform fn-clear embedded\">\n                        <div class=\"vtitle\">\n                            HARDWARE \n                        </div>\n                        <div class=\"arm list fn-clear\">\n                            \n                            <span class=\"Invader-3\">\n                            </span>\n                            <span class=\"list-title\">\n                                ARM\n                            </span>\n                        </div>\n                        <div class=\"linux list fn-clear\">\n                            \n                            </span> \n                            <span class=\"Invader-3\">\n                            </span>\n                            <span class=\"Invader-3\">\n                            </span>\n                            <span class=\"Invader-3\">\n                            </span>\n                            <span class=\"list-title\">\n                                LINUX\n                            </span>\n                        </div>\n                        <div class=\"micro list fn-clear\">\n                            \n                            <span class=\"Invader-3\">\n                            </span>\n                            <span class=\"Invader-3\">\n                            </span>\n                             <span class=\"Invader-3\">\n                            </span>\n                            <span class=\"list-title\">\n                                Micro controller\n                            </span>\n                        </div>\n                        <div class=\"pcb list fn-clear\">\n                            \n                            <span class=\"Invader-3\">\n                            </span>\n                            <span class=\"Invader-3\">\n                            </span>\n                            <span class=\"list-title\">\n                                PCB\n                            </span>\n                        </div>\n                    </div>\n                    <div class=\"underground fn-clear\">\n                    </div>\n                </div>\n                <div id=\"thirdScene\" class=\"scene\">\n                    <div class=\"level\">\n                        <span class=\"level-font\">\n                            Tragedy 3\n                        </span>\n                    </div>\n                    <div class=\"chapter\">\n                        <div class=\"title\">\n                            EXPERIENCE\n                        </div>\n                        <div class=\"Galaxian\">\n                        </div>\n                    </div>\n                    <div class=\"fn-clear form alipay-java\">\n                       \n                        <div class=\"board\">                     <div class=\"Invader-5\"></div>\n                            <a href=\"http://www.alipay.com\" target=\"_blank\" class=\"company\">Alipay.com</a>\n                            <div class=\"times\">2011.07 ~ 2013.4</div>\n                            <div class=\"brief\">\n                               <p>\n                                   the main jobs was developing and maintaining Alipay's charge system which is built by A web framework name SOFA(base on spring, ibatis, tddl and many other middleware)\n                               </p> \n                               <p>And I don't like it. Totally not my style</p>\n                            </div>\n                        </div>\n                        <div class=\"position\">JAVA ENGINEER</div>                     \n                    </div>\n                    <div class=\"fn-clear form alipay-frontend\">\n                        \n                        <div class=\"board\">                     <div class=\"Invader-4\"></div>\n                            <a href=\"http://www.alipay.com\" target=\"_blank\" class=\"company\">Alipay.com</a>\n                            <div class=\"times\">2013.04 ~ NOW</div>\n                            <div class=\"brief\">\n                                <p>And as frontend engineer in the company I try to participate the interface designing which I feel interesting and the frontend techs like css3,canvas,<a href=\"http://d3js.org\">d3js</a>, <a href=\"http://angularjs.org/\">Angular</a> are so fantastic. And that's why I decide to be a frontend engineer.</p>\n                                <p>By the way, IE6, go to hell!</p>\n                            </div>\n                        </div>\n\n                        <div class=\"position\">FRONTEND ENGINEER</div>\n\n                    </div>\n\n                    <div class=\"underground fn-clear\">\n                    </div>\n                </div>\n                <div id=\"forthScene\" class=\"scene\">\n                    <div class=\"level\">\n                        <span class=\"level-font\">\n                            Tragedy 4\n                        </span>\n                    </div>\n                    <div class=\"chapter\">\n                        <div class=\"title\">\n                            OTHERS\n                        </div>\n                        <div class=\"Galaxian\">\n                        </div>\n                    </div>\n                    <div class=\"vtform\">\n                        <div class=\"RHCE fn-hide\"><i class='redhat'></i><span>RHCE</span></div>\n                        <div class=\"smartcar-project\">\n                            \n                        </div>\n                        <div class=\"more\">WILL BE MORE.. </div>\n\n                    </div>\n                    <div class=\"underground fn-clear\">\n                    </div>\n                    <div class=\"fly\">\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                    </div>\n                </div>\n                <div id=\"endScene\" class=\"fn-right fn-clear\">\n                    <div class=\"title-font gameover fn-left\">\n                        GAME OVER\n                    </div>\n                    <div class=\"title-font andover fn-left\">\n                        AND OVER AGAIN\n                    </div>\n                </div>\n                <div id=\"endpreScene\" class=\"\">\n                    <div class=\"tops\">\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                        <div class=\"Galaxian-sc\">\n                        </div>\n                    </div>\n                    <div class=\"startTitle title-font\">\n                        Flynn Gao's Resume\n                    </div>\n                    <div class=\"email fn-hide\">\n                        Email: <a href=\"mailto://flynn.gao.y@gmail.com\">flynn.gao.y@gmail.com</a>\n                        <iframe src=\"http://ghbtns.com/github-btn.html?user=flynngao&repo=flynngao.github.io&type=watch&count=true&size=large\" height=\"30\" width=\"170\" frameborder=\"0\" scrolling=\"0\" style=\"width:170px; height: 30px;\" allowTransparency=\"true\"></iframe>\n                    </div>\n                </div>\n            </div>\n            <div id=\"tu\">\n            </div>\n        </div>\n    </body>\n\n</html>",
 			"file": "about.html",
+			"file_size": 19981,
+			"file_write_time": 1389368380000000,
 			"settings":
 			{
-				"buffer_size": 14106,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/js/about.js",
-			"settings":
-			{
-				"buffer_size": 2337,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/css/style.css",
-			"settings":
-			{
-				"buffer_size": 10988,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/themes/normal/post.html",
-			"settings":
-			{
-				"buffer_size": 1217,
+				"buffer_size": 19981,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,10 +542,53 @@
 			}
 		},
 		{
+			"contents": "#### 浮躁\n\n",
+			"file": "_draft/浮躁.md",
+			"file_size": 0,
+			"file_write_time": 1389150473000000,
+			"settings":
+			{
+				"buffer_size": 9,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-1-10-简历的由来.md",
+			"settings":
+			{
+				"buffer_size": 1169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2013-10-12-ATP每周精选.v.01.md",
+			"settings":
+			{
+				"buffer_size": 1952,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "assets/css/about.css",
 			"settings":
 			{
-				"buffer_size": 8890,
+				"buffer_size": 13577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/about.js",
+			"settings":
+			{
+				"buffer_size": 3440,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/themes/normal/default.html",
+			"settings":
+			{
+				"buffer_size": 3875,
 				"line_ending": "Unix"
 			}
 		}
@@ -811,6 +833,9 @@
 	},
 	"file_history":
 	[
+		"/Users/gaoflynn/Documents/projects/flynngao.github.io/assets/css/style.css",
+		"/Users/gaoflynn/Documents/workspace/bankcardui/pages/template.html",
+		"/Users/gaoflynn/Documents/projects/flynngao.github.io/_includes/themes/normal/post.html",
 		"/Users/gaoflynn/Documents/projects/flynngao.github.io/assets/css/flat-ui.css",
 		"/Users/gaoflynn/Documents/projects/flynngao.github.io/_includes/themes/normal/default.html",
 		"/Users/gaoflynn/Documents/projects/flynngao.github.io/_layouts/default.html",
@@ -935,10 +960,7 @@
 		"/Users/gaoflynn/Documents/projects/ZD4.0/modules/income.jade",
 		"/Users/gaoflynn/Documents/projects/ZD4.0/js/default.js",
 		"/Users/gaoflynn/Documents/projects/ZD4.0/modules/consumeRank.jade",
-		"/Users/gaoflynn/Documents/projects/ZD4.0/modules/consumeTrend.jade",
-		"/Users/gaoflynn/Documents/projects/ZD4.0/modules/alipayCredit.jade",
-		"/Users/gaoflynn/Documents/projects/ZD4.0/layout/default.jade",
-		"/Users/gaoflynn/Documents/projects/ZD4.0/css/default.less"
+		"/Users/gaoflynn/Documents/projects/ZD4.0/modules/consumeTrend.jade"
 	],
 	"find":
 	{
@@ -964,6 +986,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"other",
+			"console",
+			"90",
+			"title",
+			"90deg",
+			"starwars",
+			"starwar",
+			"starwars",
 			"auto",
 			"Galaxian-sc",
 			"Galaxian-sy",
@@ -1083,15 +1113,7 @@
 			"total",
 			"conso",
 			"1",
-			"scroll",
-			"fon",
-			"box-sizing",
-			"value",
-			"data-sale",
-			"\">",
-			">",
-			"元",
-			"9"
+			"scroll"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1110,6 +1132,7 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1117,15 +1140,15 @@
 					"file": "about.html",
 					"settings":
 					{
-						"buffer_size": 14106,
+						"buffer_size": 19981,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10726,
-								10726
+								528,
+								528
 							]
 						],
 						"settings":
@@ -1229,25 +1252,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4525.0,
+						"translation.y": 16.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "assets/js/about.js",
+					"file": "_posts/2013-12-20-无线浏览器知识基础.md",
 					"settings":
 					{
-						"buffer_size": 2337,
+						"buffer_size": 72,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2066,
-								2066
+								72,
+								72
 							]
 						],
 						"settings":
@@ -1300,123 +1323,7 @@
 							[
 							],
 							"incomplete_sync": null,
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/css/style.css",
-					"settings":
-					{
-						"buffer_size": 10988,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1516,
-								1516
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"incomplete_sync": null,
+							"is_preview": true,
 							"javascript_linter": "jshint",
 							"jshint_options":
 							{
@@ -1462,30 +1369,28 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 8311.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "_includes/themes/normal/post.html",
+					"buffer": 2,
+					"file": "_draft/浮躁.md",
 					"settings":
 					{
-						"buffer_size": 1217,
+						"buffer_size": 9,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								308,
-								308
+								9,
+								9
 							]
 						],
 						"settings":
@@ -1538,6 +1443,7 @@
 							[
 							],
 							"incomplete_sync": null,
+							"is_preview": true,
 							"javascript_linter": "jshint",
 							"jshint_options":
 							{
@@ -1548,7 +1454,6 @@
 								"trailing": true,
 								"wsh": true
 							},
-							"origin_encoding": "ASCII",
 							"pep8": true,
 							"pep8_ignore":
 							[
@@ -1583,7 +1488,7 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1592,19 +1497,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "_posts/2013-12-20-无线浏览器知识基础.md",
+					"buffer": 3,
+					"file": "_posts/2014-1-10-简历的由来.md",
 					"settings":
 					{
-						"buffer_size": 72,
+						"buffer_size": 1169,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								72,
-								72
+								82,
+								82
 							]
 						],
 						"settings":
@@ -1709,11 +1614,130 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_posts/2013-10-12-ATP每周精选.v.01.md",
+					"settings":
+					{
+						"buffer_size": 1952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"is_preview": true,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"origin_encoding": "UTF-8",
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1721,15 +1745,15 @@
 					"file": "assets/css/about.css",
 					"settings":
 					{
-						"buffer_size": 8890,
+						"buffer_size": 13577,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3688,
-								3688
+								5054,
+								5054
 							]
 						],
 						"settings":
@@ -1832,7 +1856,250 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4771.0,
+						"translation.y": 6179.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/js/about.js",
+					"settings":
+					{
+						"buffer_size": 3440,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3265,
+								3265
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"origin_encoding": "ASCII",
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3480.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_includes/themes/normal/default.html",
+					"settings":
+					{
+						"buffer_size": 3875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3434,
+								3856
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"origin_encoding": "ASCII",
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2600.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1868,7 +2135,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.478515625,
 			1.0
 		],
 		"rows":
@@ -2163,6 +2430,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 133.0,
+	"side_bar_width": 214.0,
 	"status_bar_visible": true
 }

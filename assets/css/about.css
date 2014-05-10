@@ -643,13 +643,36 @@ body .fn-hide {
 }
 #forthScene .vtform{
     width:800px;
-    left:800px;
+    left:2000px;
+    bottom:800px;
 }
 #forthScene .more{
-    color:#Fff;
+    color:#aaa;
     width:600px;
     font-family: "pixel-g";
     font-size: 80px;
+}
+#forthScene .projects{
+    padding-bottom: 200px;
+    display:block;
+}
+#forthScene .projects:hover span{
+    padding-bottom: 200px;
+    display:block;
+    color:#f6f634;
+}
+
+
+#forthScene .projects *{
+    float:left;   
+}
+#forthScene .projects span{
+    width:300px;color:#fff;
+    text-align: right;
+    font-family: "pixel-g";
+    font-size: 40px;
+    padding:0 30px;
+
 }
 #forthScene .fly{
     position:absolute;
