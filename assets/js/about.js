@@ -153,7 +153,7 @@ var main = {
       eventhadle.resize();
     };
 
-    $('#stamtcar').append('<iframe width="420" height="315" src="//www.youtube.com/embed/wS14dCAZ9QE" frameborder="0" allowfullscreen></iframe>');
+    $('#smartcar').append('<iframe width="420" height="315" src="//www.youtube.com/embed/wS14dCAZ9QE" frameborder="0" allowfullscreen></iframe>');
 
     $('.page').css('height',"22000px");
     
