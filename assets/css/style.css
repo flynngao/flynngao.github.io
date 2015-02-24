@@ -38,6 +38,12 @@ h1,h2,h3,h4,h5,h6 {
     text-align: left;
 }
 
+.index-page h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .index-page h3 a {
     color: #222;
     letter-spacing: 0.2px;
