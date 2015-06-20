@@ -402,10 +402,10 @@ body .fn-hide {
     top:-300px;
 }
 .email iframe{
-    position:absolute;
-    top:40px;
-    left: 50%;
-    margin-left: -30px;
+  position: absolute;
+  top: 68px;
+  left: 50%;
+  margin-left: -55px;
 }
 /*firstScene*/
 #firstScene .code{
