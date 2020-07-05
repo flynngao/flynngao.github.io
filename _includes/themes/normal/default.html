@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
     <link href="/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link rel="shortcut icon" href="https://i.alipayobjects.com/e/201311/1SmK7nhovl.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
     <div class="container ">
@@ -60,23 +64,23 @@
     </div>
     <script>
       $(document).ready(function ($) {
-         var imgAdd = window.flynn_imgAdd = "http://pic-001.b0.upaiyun.com/miao/miao";
-         var img = window.flynn_img= parseInt(Math.random()*131);
+        //  var imgAdd = window.flynn_imgAdd = "http://pic-001.b0.upaiyun.com/miao/miao";
+        //  var img = window.flynn_img= parseInt(Math.random()*131);
 
-         $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
+        //  $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
 
           $('#cn-button').click(function (e) {
             e.preventDefault();
             var nav = $('#cn-wrapper');
             if(nav.hasClass('opened-nav')){
               nav.removeClass('opened-nav');
-              $(this).removeClass('clicked');
-              img = window.flynn_img = parseInt(Math.random()*131+1);
-              $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
+              // $(this).removeClass('clicked');
+              // img = window.flynn_img = parseInt(Math.random()*131+1);
+              // $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
 
             } else {
               nav.addClass('opened-nav');
-              $(this).addClass('clicked');
+              // $(this).addClass('clicked');
             }
 
             

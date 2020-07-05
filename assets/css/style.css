@@ -39,9 +39,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .index-page h3{
-    white-space: nowrap;
-    overflow: hidden;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
     text-overflow: ellipsis;
+    display: flex;
 }
 
 .index-page h3 a {
@@ -56,7 +57,7 @@ h1,h2,h3,h4,h5,h6 {
     transition: color .3s ease;
 }
 .index-page .date{
-    width:150px;
+    /* width:150px; */
     text-align: right;
     margin-right: 50px;
     color:#dadada;
@@ -72,6 +73,7 @@ h1,h2,h3,h4,h5,h6 {
 @media (min-width: 768px){
     .container{
         width:750px;
+        margin: auto;
     }
 }
 @media (max-width: 768px){
