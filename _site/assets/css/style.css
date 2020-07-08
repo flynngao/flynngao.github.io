@@ -1,0 +1,449 @@
+@import url("./flat-ui.css");
+
+body {
+    font-family: Lora,"Xin Gothic","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+    position:relative;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Xin Gothic","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",SimSun,sans-serif!important;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1387965080_008239.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1387965080_008239.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1387965080_0529804.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1387965079_9314837.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1387965080_0903456.svg#svgFontName') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+    font-family: "iconfont"!important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fn-hide{
+    display: none;
+}
+
+.header {
+    margin: 100px auto;
+    text-align: center;
+    
+}
+.index-page {
+    text-align: center;
+}
+.index-page .posts{
+    text-align: left;
+}
+
+.index-page h3{
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    display: flex;
+}
+
+.index-page h3 a {
+    color: #222;
+    letter-spacing: 0.2px;
+}
+
+
+.index-page h3 a:hover {
+    color:red;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+}
+.index-page .date{
+    /* width:150px; */
+    text-align: right;
+    margin-right: 50px;
+    color:#dadada;
+    margin-left: 15%;
+}
+.page-header .date{
+    font-style: italic;
+}
+.page-content{
+    border-bottom:1px solid #eee;
+    margin-bottom: 50px;
+}
+@media (min-width: 768px){
+    .container{
+        width:750px;
+        margin: auto;
+    }
+}
+@media (max-width: 768px){
+    .index-page h3{
+        font-size: 30px;
+    }
+    .index-page .date{
+        margin-left:15%; 
+    }
+}
+@media (max-width: 550px){
+    .index-page .date{
+        display:none;
+    }
+    .index-page .posts{
+        text-align: center;
+    }
+    
+    .content img{
+        width:290px;
+    }
+}
+
+
+.pagination {
+    margin: 100px auto 100px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+/*header*/
+.component {
+    position: relative;
+    margin-bottom: 3em;
+    height: 7em;
+    font-family: 'Lato', Arial, sans-serif;
+}
+.component *{
+    position:relative;
+}
+
+.component > h2 {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12em;
+    opacity: 0.1;
+    cursor: default;
+}
+
+
+.cn-button {
+    position: absolute;
+    outline: 0px;
+    top: 100%;
+    left: 50%;
+    z-index: 11;
+    margin-top: -2.25em;
+    margin-left: -2.25em;
+    padding-top: 0em;
+    width: 4.5em;
+    height: 4.5em;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    background-color: #fff;
+    color: #52be7f;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+}
+.cn-button .random{
+    display:none;
+}
+.clicked .first{
+    display:none;
+}
+.clicked .random{
+    display:inline-block!important;
+}
+
+.csstransforms .cn-wrapper {
+    font-size: .68em;
+    position: absolute;
+    top:100%;
+    left: 50%;
+    z-index: 10;
+    margin-top: -13em;
+    margin-left: -13.5em;
+    width: 27em;
+    height: 20em;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0;
+    -webkit-transition: all .3s ease 0.3s;
+    -moz-transition: all .3s ease 0.3s;
+    transition: all .3s ease 0.3s;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    transform: scale(0.1);
+    pointer-events: none;
+    overflow:hidden;
+}
+
+/*cover to prevent extra space of anchors from being clickable*/
+.csstransforms .cn-wrapper:after{
+  content:".";
+  display:block;
+  font-size:2em;
+  width:6.2em;
+  height:6.2em;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.1em;
+  top:50%;
+  margin-top: -3.1em;
+  border-radius: 50%;
+  z-index:10;
+  color: transparent;
+}
+
+.csstransforms .opened-nav {
+    border-radius: 50%;
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.csstransforms .cn-wrapper li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin-top: -1.3em;
+    margin-left: -10em;
+    width: 10em;
+    height: 10em;
+    font-size: 1.5em;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: rotate(76deg) skew(60deg);
+    -moz-transform: rotate(76deg) skew(60deg);
+    -ms-transform: rotate(76deg) skew(60deg);
+    transform: rotate(76deg) skew(60deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    pointer-events: none;
+}
+
+.csstransforms .cn-wrapper li a {
+    
+    position: absolute;
+    /*position:fixed;*/
+     /* fix the displacement bug in webkit browsers when using tab key */
+    right: -7.25em;
+    bottom: -7.25em;
+    display: block;
+    width: 14.5em;
+    height: 14.5em;
+    border-radius: 50%;
+    /*background: #429a67;*/
+    /*background: -webkit-radial-gradient(transparent 35%, transparent 35%);
+    background: -moz-radial-gradient(transparent 35%, transparent 35%);
+    background: radial-gradient(transparent 35%, transparent 35%);*/
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 2;
+    -webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
+    -moz-transform: skew(-60deg) rotate(-75deg) scale(1);
+    -ms-transform: skew(-60deg) rotate(-75deg) scale(1);
+    transform: skew(-60deg) rotate(-75deg) scale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: auto;
+}
+
+.csstransforms .cn-wrapper li a span {
+    position: relative;
+    top: .8em;
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.csstransforms .cn-wrapper li a:hover,
+.csstransforms .cn-wrapper li a:active,
+.csstransforms .cn-wrapper li a:focus {
+    background: -webkit-radial-gradient(transparent 35%, #222 35%)!important;
+    background: -moz-radial-gradient(transparent 35%, #222 35%)!important;
+    background: radial-gradient(transparent 35%, #222 35%)!important;
+}
+
+.csstransforms .opened-nav li {
+    -webkit-transition: all .3s ease .3s;
+    -moz-transition: all .3s ease .3s;
+    transition: all .3s ease .3s;
+}
+
+/*.csstransforms .opened-nav li:first-child {
+    -webkit-transform: rotate(-20deg) skew(60deg);
+    -moz-transform: rotate(-20deg) skew(60deg);
+    -ms-transform: rotate(-20deg) skew(60deg);
+    transform: rotate(-20deg) skew(60deg);
+}*/
+
+.csstransforms .opened-nav li:first-child {
+
+    -webkit-transform: rotate(12deg) skew(60deg);
+    -moz-transform: rotate(12deg) skew(60deg);
+    -ms-transform: rotate(12deg) skew(60deg);
+    transform: rotate(12deg) skew(60deg);
+}
+.csstransforms  li:first-child a{
+    background: -webkit-radial-gradient(transparent 35%, #c0392b 35%);
+    background: -moz-radial-gradient(transparent 35%, #c0392b 35%);
+    background: radial-gradient(transparent 35%, #c0392b 35%);
+}
+
+.csstransforms .opened-nav  li:nth-child(2) {
+    -webkit-transform: rotate(44deg) skew(60deg);
+    -moz-transform: rotate(44deg) skew(60deg);
+    -ms-transform: rotate(44deg) skew(60deg);
+    transform: rotate(44deg) skew(60deg);
+}
+.csstransforms  li:nth-child(2) a{
+    background: -webkit-radial-gradient(transparent 35%, #d35400 35%);
+    background: -moz-radial-gradient(transparent 35%, #d35400 35%);
+    background: radial-gradient(transparent 35%, #d35400 35%);
+}
+
+.csstransforms .opened-nav li:nth-child(3) {
+    -webkit-transform: rotate(76deg) skew(60deg);
+    -moz-transform: rotate(76deg) skew(60deg);
+    -ms-transform: rotate(76deg) skew(60deg);
+    transform: rotate(76deg) skew(60deg);
+}
+.csstransforms li:nth-child(3) a{
+    background: -webkit-radial-gradient(transparent 35%, #2980b9 35%);
+    background: -moz-radial-gradient(transparent 35%, #2980b9 35%);
+    background: radial-gradient(transparent 35%, #2980b9 35%);
+}
+.csstransforms .opened-nav li:nth-child(4) {
+    -webkit-transform: rotate(108deg) skew(60deg);
+    -moz-transform: rotate(108deg) skew(60deg);
+    -ms-transform: rotate(108deg) skew(60deg);
+    transform: rotate(108deg) skew(60deg);
+}
+.csstransforms  li:nth-child(4) a{
+    background: -webkit-radial-gradient(transparent 35%, #27ae60 35%);
+    background: -moz-radial-gradient(transparent 35%, #27ae60 35%);
+    background: radial-gradient(transparent 35%, #27ae60 35%);
+}
+
+.csstransforms .opened-nav li:nth-child(5) {
+    -webkit-transform: rotate(140deg) skew(60deg);
+    -moz-transform: rotate(140deg) skew(60deg);
+    -ms-transform: rotate(140deg) skew(60deg);
+    transform: rotate(140deg) skew(60deg);
+}
+.csstransforms  li:nth-child(5) a{
+    background: -webkit-radial-gradient(transparent 35%, #8e44ad 35%);
+    background: -moz-radial-gradient(transparent 35%, #8e44ad 35%);
+    background: radial-gradient(transparent 35%, #8e44ad 35%);
+}
+
+/*.csstransforms .opened-nav li:nth-child(7) {
+    -webkit-transform: rotate(172deg) skew(60deg);
+    -moz-transform: rotate(172deg) skew(60deg);
+    -ms-transform: rotate(172deg) skew(60deg);
+    transform: rotate(172deg) skew(60deg);
+}*/
+
+.no-csstransforms .cn-wrapper {
+    overflow: hidden;
+    margin: 10em auto;
+    padding: .5em;
+    text-align: center;
+}
+
+.no-csstransforms .cn-wrapper ul {
+    display: inline-block;
+}
+
+.no-csstransforms .cn-wrapper li {
+    float: left;
+    width: 5em;
+    height: 5em;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1em;
+    line-height: 5em;
+}
+
+.no-csstransforms .cn-wrapper li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.no-csstransforms .cn-wrapper li a:hover,
+.no-csstransforms .cn-wrapper li a:active,
+.no-csstransforms .cn-wrapper li a:focus {
+    background-color: #f8f8f8;
+}
+
+.no-csstransforms .cn-wrapper li.active a{
+    background-color: #6F325C;
+    color: #fff;
+}
+
+.no-csstransforms .cn-button {
+    display: none;
+}
+
+@media only screen and (max-width: 620px) {
+    .no-csstransforms li {
+        width: 4em;
+        height: 4em;
+        line-height: 4em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .no-ccstransforms .cn-wrapper {
+        padding: .5em;
+    }
+
+    .no-csstransforms .cn-wrapper li {
+        width: 4em;
+        height: 4em;
+        font-size: .9em;
+        line-height: 4em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .csstransforms .cn-wrapper {
+        font-size: .58em;
+    }
+
+    .cn-button {
+        /*font-size: 1em;*/
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .no-csstransforms .cn-wrapper li {
+        width: 100%;
+        height: 3em;
+        line-height: 3em;
+    }
+}
+

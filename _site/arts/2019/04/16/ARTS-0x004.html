@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <title>
+      ARTS - 0x004 2019.04.11
+    </title>
+    
+    <meta name="author" content="">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+                        
+      </script>
+    <![endif]-->
+    <script src="/assets/js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link href="/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="https://i.alipayobjects.com/e/201311/1SmK7nhovl.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div class="container ">
+      <div class="header csstransforms">
+        <div class="component ">
+        <button class="cn-button" id="cn-button">
+          <a href=""><img class="first" src="http://tp2.sinaimg.cn/1674540501/180/40013708336/1" alt="header" width="80"
+          height="80">
+          <img class="random"  onerror="this.src=window.flynn_imgAdd+window.flynn_img+'.gif'" alt="header" width="80"
+          height="80">
+          </a>
+          <div style="font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif; color: #333; margin: 10px; font-size: 18px; ">秃 • 悟</div>
+        </button>
+        <div class="cn-wrapper " id="cn-wrapper">
+          <ul>
+            <li><a href="/"><span class="iconfont">&#x355c;</span></a></li>
+            <li><a href="/works" title="works"><span class="iconfont">&#x360b;</span></a></li>
+            <li><a href="http://weibo.com/u/1674540501" title="weibo"><span class="iconfont">&#x35e0;</span></a></li>
+            <li><a href="https://github.com/flynngao" title="github"><span class="iconfont">&#x35fb;</span></a></li>
+            <li><a href="/about"><span class="iconfont">&#x366f;</span></a></li>
+           </ul>
+        </div>
+        <!-- End of Nav Structure -->
+      </div>
+<!--        <div class="links">
+          <a href="/">Blogs</a>
+          <a href="/about.html">About</a>
+       </div> -->
+      </div>
+      <div class="content fn-clear">
+        <div class="page-header">
+  <h3><span class="title">ARTS - 0x004 2019.04.11 </span><small></small></h3>
+  <div class="date"><span>16 April 2019</div>
+  <a href="" class="back"></a>
+</div>
+<link rel="stylesheet" href="/assets/css/markdown.css">
+<div class='page-content'>
+  <h2 id="algorithm">Algorithm</h2>
+
+<p><strong>Leetcode 139</strong> <a href="https://leetcode.com/problems/word-break/">Word Break</a></p>
+
+<p>又是一条经典的问题，我凭借模糊的记忆重做了一遍，根据youtube上的视频，属于dp问题的1.2问题，就是输入是一个O(n)的数组，但是要求解所有子问题的中的最优解，这样就确定时间复杂度必定是o(n^2)，针对dp学习到的一些模式卸载分享部分里</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">wordBreak</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span> <span class="nx">wordDict</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">dp</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">s</span><span class="p">.</span><span class="nx">length</span> <span class="o">+</span> <span class="mi">1</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+    <span class="nx">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// 最早初始化</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">dp</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">let</span> <span class="nx">temps</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">)</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">wordDict</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">temps</span><span class="p">)</span> <span class="o">!==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">dp</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">dp</span><span class="p">[</span><span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="p">];</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="review">Review</h2>
+
+<p><a href="https://www.dannymoerkerke.com/blog/web-components-will-replace-your-frontend-framework">Web Components will replace your frontend framework</a></p>
+
+<p>作者主要描述了，像document.querySelector这样的接口出现逐渐替代了JQuery，随着webcomponent标准的推进，现有的三大框架体系都可能可以被替换，作者使用了大量篇幅来暂时了用webcomponent如何完成各类组件的形态，并且写了一个小的组件库<a href="https://dannymoerkerke.github.io/material-webcomponents">material-webcomponents</a>，准备阅读一下代码并且学习一下</p>
+
+<h2 id="tip--share">Tip &amp;&amp; Share</h2>
+
+<p>认真的复习了一下flex布局，知识点实在是多</p>
+
+<h4 id="基础属性">基础属性</h4>
+
+<p>基础属性分成容器属性（父节点）和Item属性（子节点）</p>
+
+<p>父节点相关属性：display：flex，flex-direction，flex-wrap，justify-content(水平), align-items(垂直)，align-content，flex-wrap
+子节点相关属性：align-self，flex-grow，flex-shrink，order，flex-basis</p>
+
+<p>其中比较关键的部分是flex-basis和direction改变之后的轴的变换</p>
+
+<p>参考文章：<a href="https://www.w3cplus.com/css3/understanding-flexbox-everything-you-need-to-know.html">理解Flexbox：你需要知道的一切</a>
+<a href="https://codepen.io/flynngao/pen/gyXzJG">codepen实践</a></p>
+
+</div>
+<div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'flynngao'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+      </div>
+      <!-- /container -->
+    </div>
+    <script>
+      $(document).ready(function ($) {
+        //  var imgAdd = window.flynn_imgAdd = "http://pic-001.b0.upaiyun.com/miao/miao";
+        //  var img = window.flynn_img= parseInt(Math.random()*131);
+
+        //  $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
+
+          $('#cn-button').click(function (e) {
+            e.preventDefault();
+            var nav = $('#cn-wrapper');
+            if(nav.hasClass('opened-nav')){
+              nav.removeClass('opened-nav');
+              // $(this).removeClass('clicked');
+              // img = window.flynn_img = parseInt(Math.random()*131+1);
+              // $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
+
+            } else {
+              nav.addClass('opened-nav');
+              // $(this).addClass('clicked');
+            }
+
+            
+          });
+
+
+      })
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45779650-2', 'flynngao.github.io');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+
+</html>

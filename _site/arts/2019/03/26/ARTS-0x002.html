@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <title>
+      ARTS - 0x002 2019.03.26
+    </title>
+    
+    <meta name="author" content="">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+                        
+      </script>
+    <![endif]-->
+    <script src="/assets/js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link href="/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="https://i.alipayobjects.com/e/201311/1SmK7nhovl.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div class="container ">
+      <div class="header csstransforms">
+        <div class="component ">
+        <button class="cn-button" id="cn-button">
+          <a href=""><img class="first" src="http://tp2.sinaimg.cn/1674540501/180/40013708336/1" alt="header" width="80"
+          height="80">
+          <img class="random"  onerror="this.src=window.flynn_imgAdd+window.flynn_img+'.gif'" alt="header" width="80"
+          height="80">
+          </a>
+          <div style="font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif; color: #333; margin: 10px; font-size: 18px; ">秃 • 悟</div>
+        </button>
+        <div class="cn-wrapper " id="cn-wrapper">
+          <ul>
+            <li><a href="/"><span class="iconfont">&#x355c;</span></a></li>
+            <li><a href="/works" title="works"><span class="iconfont">&#x360b;</span></a></li>
+            <li><a href="http://weibo.com/u/1674540501" title="weibo"><span class="iconfont">&#x35e0;</span></a></li>
+            <li><a href="https://github.com/flynngao" title="github"><span class="iconfont">&#x35fb;</span></a></li>
+            <li><a href="/about"><span class="iconfont">&#x366f;</span></a></li>
+           </ul>
+        </div>
+        <!-- End of Nav Structure -->
+      </div>
+<!--        <div class="links">
+          <a href="/">Blogs</a>
+          <a href="/about.html">About</a>
+       </div> -->
+      </div>
+      <div class="content fn-clear">
+        <div class="page-header">
+  <h3><span class="title">ARTS - 0x002 2019.03.26 </span><small></small></h3>
+  <div class="date"><span>26 March 2019</div>
+  <a href="" class="back"></a>
+</div>
+<link rel="stylesheet" href="/assets/css/markdown.css">
+<div class='page-content'>
+  <h2 id="algorithm">Algorithm</h2>
+
+<p><strong>Leetcode 146</strong> <a href="https://leetcode.com/problems/flip-game-ii/">Flip Game II</a></p>
+
+<p>是一个不太一样的backtrack题目，一般的bt题目都是输出所有答案，从题目需要的输出上会考虑是否有bt暴力更好的方式，发现还是要使用bt来做，根据论坛的一篇<a href="https://leetcode.com/problems/flip-game-ii/discuss/73954/Theory-matters-from-Backtracking(128ms)-to-DP-(0ms)">神答案</a>时间复杂度是O(n!!)，有dp + game theory简化方法太复杂，迟些再进行研究</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">canWin</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">s</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">bt</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        
+        <span class="kd">let</span> <span class="nx">win</span> <span class="o">=</span> <span class="kc">false</span>
+        <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="nx">s</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">+</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+                
+                <span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">s</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">-</span><span class="dl">'</span><span class="p">;</span>
+                <span class="nx">win</span> <span class="o">=</span> <span class="o">!</span><span class="nx">bt</span><span class="p">();</span>
+                <span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">s</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">+</span><span class="dl">'</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">win</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">bt</span><span class="p">();</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="review">Review</h2>
+
+<p>(CAP Theorem)[http://robertgreiner.com/2014/08/cap-theorem-revisited/]</p>
+
+<p>经典的CAP原则，讨论了基本的CAP概念的文章</p>
+
+<p>Consistency （一致性） - A read is guaranteed to return the most recent write for a given client.<br />
+关于一致性，一般大厂只会完成最终一致性的保证，绝大部分情况够用，但在理论上还是牺牲了C。</p>
+
+<p>Availability - A non-failing node will return a reasonable response within a reasonable amount of time (no error or timeout).
+可用性，基本上是最看重</p>
+
+<p>Partition Tolerance - The system will continue to function when network partitions occur.
+网络分区保证，对于P一直想不到一个比较好的词来但是基本上来说，P是必须要实现的，所以最终是CP和AP系统中选一个，也就是所谓的software trade off。</p>
+
+<h2 id="tip--share">Tip &amp;&amp; Share</h2>
+
+<p>Html5 postMessage的跨域执行，因为处理了一把ionic里的recaptcha问题，做了一些跨域的小操作，进行一下记录</p>
+
+<p>postMessage参数:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>targetWindow.postMessage(message, targetOrigin, [transfer]);
+</code></pre></div></div>
+
+<p>父页面</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;iframe</span> <span class="na">id=</span><span class="s">'ifr'</span> <span class="na">src=</span><span class="s">"http://iframeurl"</span> <span class="na">hidden</span> <span class="na">frameborder=</span><span class="s">"0"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+            <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">ifr</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#ifr</span><span class="dl">'</span><span class="p">);</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">postmessage</span><span class="dl">'</span><span class="p">)</span>
+                <span class="nx">ifr</span><span class="p">.</span><span class="nx">contentWindow</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">({</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="dl">'</span><span class="s1">*</span><span class="dl">'</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="kd">var</span> <span class="nx">listener</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">bar say: </span><span class="dl">'</span><span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">token</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nb">window</span><span class="p">.</span><span class="nx">captchaToken</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span>
+                <span class="p">}</span>
+                
+             <span class="p">}</span>
+            <span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="nx">listener</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+    <span class="nt">&lt;/script&gt;</span>
+
+</code></pre></div></div>
+
+<p>iframe里</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;script&gt;</span>
+    <span class="kd">let</span> <span class="nx">listener</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">foo say: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">a</span><span class="p">);</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nx">source</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span><span class="dl">'</span><span class="s1">get</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">*</span><span class="dl">'</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="nx">listener</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+</div>
+<div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'flynngao'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+      </div>
+      <!-- /container -->
+    </div>
+    <script>
+      $(document).ready(function ($) {
+        //  var imgAdd = window.flynn_imgAdd = "http://pic-001.b0.upaiyun.com/miao/miao";
+        //  var img = window.flynn_img= parseInt(Math.random()*131);
+
+        //  $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
+
+          $('#cn-button').click(function (e) {
+            e.preventDefault();
+            var nav = $('#cn-wrapper');
+            if(nav.hasClass('opened-nav')){
+              nav.removeClass('opened-nav');
+              // $(this).removeClass('clicked');
+              // img = window.flynn_img = parseInt(Math.random()*131+1);
+              // $('.cn-button .random').attr("src",imgAdd+img+'.jpg');
+
+            } else {
+              nav.addClass('opened-nav');
+              // $(this).addClass('clicked');
+            }
+
+            
+          });
+
+
+      })
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45779650-2', 'flynngao.github.io');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+
+</html>
