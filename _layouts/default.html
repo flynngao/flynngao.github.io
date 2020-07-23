@@ -1,6 +1,18 @@
 ---
-theme :
-  name : normal
+layout: compress
 ---
 
-{% include themes/normal/default.html %}
+<!DOCTYPE html>
+<html lang="en" >
+  {% include head.html %}  
+  <body>
+    <main role="main">
+	    
+	    {% include navigation.html %}
+	    
+        {{ content }}
+        	    
+    </main>
+            
+  </body>
+</html>

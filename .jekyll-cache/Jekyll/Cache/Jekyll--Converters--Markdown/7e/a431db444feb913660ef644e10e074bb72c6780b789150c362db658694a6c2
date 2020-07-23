@@ -1,0 +1,26 @@
+I"Ø<p>Sidey is a simple and minimalistic jekyll blogging theme.</p>
+
+<h3 id="features">Features</h3>
+
+<ul>
+  <li>Responsive design</li>
+  <li>Inline CSS</li>
+  <li>Anchor headings</li>
+  <li>Search</li>
+  <li>Tags &amp; tag pages</li>
+  <li>Security headers (for Netlify hosting)</li>
+  <li>404 page</li>
+  <li>Compressed CSS and HTML</li>
+  <li>100/100 score on Lighthouse, Page Speed Insights &amp; Webpagetest</li>
+  <li>Robots.txt</li>
+  <li>Atom &amp; Json feeds</li>
+  <li>Sass</li>
+  <li>Seo optimized (Twitter cards, Facebook Open Graph, Schema.org)</li>
+  <li>Ultra fast (Only ~5kb of CSS)</li>
+  <li>Sidebar navigation</li>
+</ul>
+
+<h3 id="screenshot">Screenshot</h3>
+
+<p><img src="screenshot.png" alt="Screenshot" /></p>
+:ET

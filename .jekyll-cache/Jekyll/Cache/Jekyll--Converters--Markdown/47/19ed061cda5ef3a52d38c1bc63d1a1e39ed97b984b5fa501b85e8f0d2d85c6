@@ -1,0 +1,53 @@
+I"<h2 id="algorithm">Algorithm</h2>
+
+<p><strong>Leetcode 300</strong> <a href="https://leetcode.com/problems/longest-increasing-subsequence/"> Longest Increasing Subsequence</a></p>
+
+<p>经典题目
+先要构建LIS的子问题，最简单的dp接法是O(n^2)，每次轮询前面每个dp结果，判断哪个dp[j] + 1最大就是当前的dp值，转化公式 dp[i] = max(dp[i], dp[j..] + 1)</p>
+
+<pre><code class="language-javascript">var lengthOfLIS = function(nums) {
+    
+    if(!nums.length) return 0
+    let dp = new Array(nums.length).fill(1), result = 1;
+    for(let i = 0;i &lt; nums.length; i++) {
+        for(let j = 0; j &lt; i; j++) {
+             if(nums[i] &gt; nums[j]) {
+                 dp[i] = Math.max(dp[j] + 1 , dp[i])
+             }
+        }
+        result = Math.max(dp[i], result);
+    }
+    
+    
+    return result;
+};
+</code></pre>
+
+<h2 id="review">Review</h2>
+
+<p><a href="https://blog.usejournal.com/migrating-your-rest-apis-to-http-2-why-and-how-8caee7d798fb">Migrating your REST APIs to HTTP/2: Why and How?</a></p>
+
+<p>作者介绍我们为什么应该升级HTTP/1.1到2</p>
+
+<p>2比1增加了什么，相比1.x使用换行text的方式传输，2.0新增了binary frame层，避免1.x体积大容易出错的问题，HTTP/2分成header frame和data frame，分别承载http头和数据.</p>
+
+<p>作者认为的关键好处：</p>
+<ol>
+  <li>Binary processing 相比HTTP/1.x文字parser能够有多种，2.0只有一种parser，对于大小写，空白行这些方面</li>
+  <li>Multiplexing(并行传输) 相比1.x每次只能一个个请求返回，这样会造成队列和阻塞TCP链接，客户端也需要猜测请求的前后顺序，2.0使用了binary之后，能做到同时的并行传输，客户端只需要一个链接就能拿到<strong>不带阻塞带顺序</strong>的responses，</li>
+  <li>Header Compression 请求头压缩，2.0使用了HPACK技术对请求头进行了压缩，随着头部越来越大的现代请求，头部压缩非常必要</li>
+  <li>Server Push 服务器推送 在1.x时代，服务器只能对过来的请求进行一个response，但是2.0对于1个请求可以进行多个response，所以在对奇怪进行返回的时候，server能对client推送更多信息，类似在请求html的时候，可以不用通过渲染之后在请求js和css进行同步传输</li>
+</ol>
+
+<h2 id="tip--share">Tip &amp;&amp; Share</h2>
+
+<p>对Vue框架进行了仔细研读，并且开始动手实现了一个简单框架，其中最重要的基础是defineProperty方法，整体来说分为好几步:</p>
+<ul>
+  <li>数据劫持，拦截整个data对象，递归整个对象把所有值进行拦截</li>
+  <li>数据代理，data对象挂载到vue对象上，可以直接进行操作</li>
+  <li>订阅广播，使用了一个简单的数组来记录所有的需要更新的对象，当触发广告的时候，队列中所有的对象都会被调用update方法</li>
+  <li>编译模板，把template中的{{}}找到并且进行数据替换，初始化模板的时候会给所有的这样的节点添加对应值的watcher，用于更新当前dom，这里涉及AST相关知识点，也需要递归AST树做整体替换，模板中针对input的事件监听和同时增长v-model的wather达到了双向绑定的效果</li>
+</ul>
+
+<p><a href="https://github.com/flynngao/nue">代码</a></p>
+:ET

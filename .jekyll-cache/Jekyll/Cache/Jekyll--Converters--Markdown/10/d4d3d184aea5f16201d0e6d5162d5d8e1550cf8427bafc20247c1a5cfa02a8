@@ -1,0 +1,93 @@
+I"<h2 id="algorithm">Algorithm</h2>
+
+<p><strong>Leetcode 146</strong> <a href="https://leetcode.com/problems/alien-dictionary/">Alien Dictionary</a></p>
+
+<p>是一条拓扑排序题目，基本程序分成两部分，把按照 <strong>字符排序</strong> 的字符串数组构建成无向图，当无向图中有环的时候输出空，然后用拓扑排序输出答案</p>
+
+<p>关于拓扑排序，非常像树的后序遍历，遍历之后为反序，一般需要一个栈来输出正确序列</p>
+
+<pre><code class="language-javascript">var alienOrder = function(words) {
+    let graph = {}, order = [], visit = [];
+
+    // 图的构建
+    for(let i = 0; i &lt; words.length; i++) {
+        for(let j = 0, match = false; j &lt; words[i].length; j++) {
+            if(!graph[words[i][j]]) graph[words[i][j]] = [];
+            // up
+            if(i &gt; 0 &amp;&amp; !match &amp;&amp; words[i - 1][j] &amp;&amp; words[i - 1][j] != words[i][j]) {
+                
+                if(graph[words[i - 1][j]].indexOf(words[i][j]) === -1) graph[words[i - 1][j]].push(words[i][j]);
+                match = true;
+            }
+            
+        }
+    }
+    let keys = Object.keys(graph);
+    let cycle = false;
+    
+    // 排序输出答案
+    let dfs = (node) =&gt; {
+        if(visit[node] === 1) return true; // cycle &amp;&amp; visiting
+        if(visit[node] === 2) return false; // visited
+        
+        visit[node] = 1;
+        for(let i = 0;i &lt; graph[node].length; i++) {
+            if(dfs(graph[node][i])) return true;
+        }
+        visit[node] = 2;
+        if(order.indexOf(node) === -1) order.push(node);
+        return false;
+        
+    }
+    
+    for(let i = 0; i &lt; keys.length; i++) {
+        
+        if(cycle) continue;
+        
+        cycle = dfs(keys[i]) || cycle;
+    }
+    
+    return cycle ? '' : order.reverse().join('')
+    
+};
+</code></pre>
+
+<h2 id="review">Review</h2>
+
+<p><a href="https://github.com/nodejs/node/blob/v6.x/doc/topics/event-loop-timers-and-nexttick.md">The Node.js Event Loop, Timers, and process.nextTick()</a></p>
+
+<p>一篇知识点非常庞大的文章，通过深挖这篇文章，基本已经完整理解eventloop的机制</p>
+
+<p>首先需要理解的概念，<strong>nodejs</strong> 与 <strong>浏览器</strong> 的eventloop是不一样的，nodejs的eventloop是基于libuv已经完成的实现，浏览器的是html5写了标准，每浏览器厂商的实现都会有所差异，关于浏览器的eventloop，暂时看到最好的文章是 <a href="https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/">https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/</a></p>
+
+<pre><code>   ┌───────────────────────┐
+┌─&gt;│        timers         │   // 定时器 setTimeout 和 setInterval
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+│  │     I/O callbacks     │   // IO 相关
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+│  │     idle, prepare     │   // node自身使用
+│  └──────────┬────────────┘      ┌───────────────┐
+│  ┌──────────┴────────────┐      │   incoming:   │
+│  │         poll          │&lt;─────┤  connections, │  
+│  └──────────┬────────────┘      │   data, etc.  │
+│  ┌──────────┴────────────┐      └───────────────┘
+│  │        check          │   // setImmediate
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+└──┤    close callbacks    │   // eg. socket.on('close', ...)
+   └───────────────────────┘
+</code></pre>
+<p>上图为经典结构图，每个阶段完成了会进行下个阶段，每个阶段有专门自己的callback队列</p>
+
+<p>timer和poll是相对重要的部分，主要讨论，poll阶段会进行阻塞的情况，分成有timer和没有timer的情况进行讨论，</p>
+
+<p>process.nextTick是每个阶段切换的时候执行，某种程度是一种历史产物，可以之后尽量使用setImmediate</p>
+
+<h2 id="tip--share">Tip &amp;&amp; Share</h2>
+
+<p>决定根据我自己情况吧Tip和Share进行一下合并，专门用记录随笔</p>
+
+<p>阅读了《这样读书就对了》，以及整体性学习法，其中对于教育别人和使用比喻法内化知识都有提及，对于学习知识应该有两个方面的习惯需要养成，第一，看过的过程能不能在脑海里用自己方式演绎一遍，类似快排的排序方式，第二，能不能简单的解释给别人明白这个点，</p>
+:ET

@@ -1,0 +1,84 @@
+I"<h2 id="algorithm">Algorithm</h2>
+
+<p><strong>Leetcode 146</strong> <a href="https://leetcode.com/problems/flip-game-ii/">Flip Game II</a></p>
+
+<p>是一个不太一样的backtrack题目，一般的bt题目都是输出所有答案，从题目需要的输出上会考虑是否有bt暴力更好的方式，发现还是要使用bt来做，根据论坛的一篇<a href="https://leetcode.com/problems/flip-game-ii/discuss/73954/Theory-matters-from-Backtracking(128ms)-to-DP-(0ms)">神答案</a>时间复杂度是O(n!!)，有dp + game theory简化方法太复杂，迟些再进行研究</p>
+
+<pre><code class="language-javascript">var canWin = function(s) {
+    let result = false;
+    s = s.split('');
+    let bt = () =&gt; {
+        
+        let win = false
+        for(let i = 0; i &lt; s.length;i++) {
+            if(s[i] === s[i + 1] &amp;&amp; s[i] === '+') {
+                
+                s[i] = s[i + 1] = '-';
+                win = !bt();
+                s[i] = s[i + 1] = '+';
+                if(win) return true;
+            }
+            
+        }
+        return false;
+        
+    }
+    return bt();
+};
+</code></pre>
+
+<h2 id="review">Review</h2>
+
+<p>(CAP Theorem)[http://robertgreiner.com/2014/08/cap-theorem-revisited/]</p>
+
+<p>经典的CAP原则，讨论了基本的CAP概念的文章</p>
+
+<p>Consistency （一致性） - A read is guaranteed to return the most recent write for a given client.<br />
+关于一致性，一般大厂只会完成最终一致性的保证，绝大部分情况够用，但在理论上还是牺牲了C。</p>
+
+<p>Availability - A non-failing node will return a reasonable response within a reasonable amount of time (no error or timeout).
+可用性，基本上是最看重</p>
+
+<p>Partition Tolerance - The system will continue to function when network partitions occur.
+网络分区保证，对于P一直想不到一个比较好的词来但是基本上来说，P是必须要实现的，所以最终是CP和AP系统中选一个，也就是所谓的software trade off。</p>
+
+<h2 id="tip--share">Tip &amp;&amp; Share</h2>
+
+<p>Html5 postMessage的跨域执行，因为处理了一把ionic里的recaptcha问题，做了一些跨域的小操作，进行一下记录</p>
+
+<p>postMessage参数:</p>
+<pre><code>targetWindow.postMessage(message, targetOrigin, [transfer]);
+</code></pre>
+
+<p>父页面</p>
+<pre><code class="language-html">    &lt;iframe id='ifr' src="http://iframeurl" hidden frameborder="0"&gt;&lt;/iframe&gt;
+    &lt;script&gt;
+            window.onload = function () {
+                var ifr = document.querySelector('#ifr');
+                console.log('postmessage')
+                ifr.contentWindow.postMessage({a: 1}, '*');
+            }
+            var listener = function(e) {
+                console.log('bar say: '+ e.data);
+                if(e.data.token) {
+                    window.captchaToken = e.data;
+                }
+                
+             }
+            window.addEventListener('message', listener, false);
+    &lt;/script&gt;
+
+</code></pre>
+
+<p>iframe里</p>
+<pre><code class="language-html"> &lt;script&gt;
+    let listener = function (e) {
+       if (e.data.a) {
+            console.log('foo say: ' + e.data.a);
+            e.source.postMessage('get', '*');
+        }
+    }
+    window.addEventListener('message', listener, false)
+&lt;/script&gt;
+</code></pre>
+:ET

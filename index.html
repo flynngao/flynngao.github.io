@@ -1,37 +1,12 @@
 ---
-layout: page
+layout: default
 ---
 
-<div class="index-page">
-<div class="posts fn-clear">
-  {% for post in paginator.posts %}
-    <article class='{{post.icon}}'>
-    	
-    	<div class="">	    
-    		<h3><span class='date'>{{ post.date | date:"%y.%m.%d"}}</span><a class='title' href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-          </h3>
- 
-    	</div>
-
-   	</article>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  <ul>
-      <li {% if paginator.page == 1 %} class="active" {% endif %}>   
-        <a href="/">1</a>  
-      </li>
-
-    {% for count in (2..paginator.total_pages) %}
-      <li {% if count == paginator.page %} class="active" {% endif %}>
-          <a href="/page{{ count }}">{{ count }}</a>
-      </li>
-    {% endfor %}
-  </ul>
- 
-</div>
-</div>
-
-
+<section class="posts">
+<ul>
+{% for post in site.posts %}
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
+{% endfor %}
+</ul>
+</section>
 
