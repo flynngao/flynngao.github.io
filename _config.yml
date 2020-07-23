@@ -1,16 +1,16 @@
-site: Sidey
-url: #yoururl
-title: Sidey
-description: Simple and minimalistic jekyll blogging theme.
+site: FlynnGao 
+url: https://flynngao.github.io
+title: FlynnGao's Thoughts
+description: 
 twitter:
-  username: #yourusername
+  username: FlynnGao 
   card: summary
   creator: #yourusername
 author:
   twitter: #yourusername
-  name: #yourusername
+  name: FlynnGao
   avatar:
-  email: #youremail
+  email: i@flynngao.com
   url: #yoururl
 permalink: pretty
 
